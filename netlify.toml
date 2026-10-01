@@ -2,6 +2,38 @@
   publish = "."
   functions = "."
 
+# Oude en extra domeinen sturen door naar hetgoede.org
+[[redirects]]
+  from = "https://hetgoede.be/*"
+  to = "https://hetgoede.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.hetgoede.be/*"
+  to = "https://hetgoede.org/:splat"
+  status = 301
+  force = true
+
+# Interne bestanden niet publiek tonen
+[[redirects]]
+  from = "/DEPLOY.md"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/inschrijven.js"
+  to = "/404"
+  status = 404
+  force = true
+
 # Vast adres voor de QR-code op de bladwijzer. Dit adres verandert nooit,
 # de bestemming mag later wel aangepast worden.
 [[redirects]]

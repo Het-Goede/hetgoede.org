@@ -40,6 +40,32 @@ untold-wordmerk-*.png   het wordmerk van Untold
 avenir-*.woff2          Avenir (weblicentie vereist)
 ```
 
+## Huidige instellingen
+
+Niets hiervan is geheim. De API-sleutel staat enkel in Netlify (als geheim) en in het wachtwoorddocument.
+
+| Wat | Waarde |
+|---|---|
+| Netlify-project | hetgoede, tijdelijk adres hetgoede.netlify.app |
+| Primair domein | hetgoede.org, www.hetgoede.org stuurt door |
+| Extra domeinen | hetgoede.be en www.hetgoede.be, sturen door naar hetgoede.org |
+| Brevo-lijst | Het Goede — inschrijvingen, nummer 3 |
+| Bevestigingsmail NL | sjabloon 1 |
+| Bevestigingsmail FR | sjabloon 2 |
+
+DNS bij Combell voor hetgoede.org:
+
+| Type | Naam | Waarde |
+|---|---|---|
+| A | @ | 75.2.60.5 (Netlify) |
+| CNAME | www | hetgoede.netlify.app |
+| TXT | @ | brevo-code:… (verificatie Brevo) |
+| CNAME | brevo1._domainkey | b1.hetgoede-org.dkim.brevo.com |
+| CNAME | brevo2._domainkey | b2.hetgoede-org.dkim.brevo.com |
+| TXT | _dmarc | v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com |
+
+Voor hetgoede.be staan het A-record van @ en www op 75.2.60.5. MX, SPF en de overige mailrecords van Combell bleven ongewijzigd.
+
 ## Hoe een inschrijving loopt
 
 1. Iemand vult het formulier in en vinkt de toestemming aan.
