@@ -1,6 +1,6 @@
 [build]
   publish = "."
-  functions = "netlify/functions"
+  functions = "."
 
 # Vast adres voor de QR-code op de bladwijzer. Dit adres verandert nooit,
 # de bestemming mag later wel aangepast worden.
@@ -20,7 +20,12 @@
   status = 200
 
 [[headers]]
-  for = "/assets/*"
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.png"
   [headers.values]
     Cache-Control = "public, max-age=604800"
 

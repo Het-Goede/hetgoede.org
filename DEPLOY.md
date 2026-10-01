@@ -25,14 +25,19 @@ Bescherm die mailbox dus het best van allemaal.
 
 ## Wat er in deze repository zit
 
+Alle bestanden staan naast elkaar in de hoofdmap.
+
 ```
-index.html                       de pagina
-privacy.html                     privacyverklaring
-bevestigd.html                   pagina na het bevestigen van de inschrijving
-netlify.toml                     instellingen en redirects
-netlify/functions/inschrijven.js stuurt een inschrijving naar Brevo
-assets/img/                      cover, groeistappen van de ginkgo, Untold-wordmerk
-assets/fonts/                    Avenir (weblicentie vereist)
+index.html              de pagina
+privacy.html            privacyverklaring
+bevestigd.html          pagina na het bevestigen van de inschrijving
+netlify.toml            instellingen en redirects (functions = ".")
+inschrijven.js          stuurt een inschrijving naar Brevo
+cover.png               de cover van het boek
+stap1.png … stap6.png   de groeistappen van de ginkgo
+ginkgo.svg              de ginkgo als vector
+untold-wordmerk-*.png   het wordmerk van Untold
+avenir-*.woff2          Avenir (weblicentie vereist)
 ```
 
 ## Hoe een inschrijving loopt
@@ -57,7 +62,7 @@ Site configuration → Environment variables:
 | BREVO_DOI_TEMPLATE_FR | nummer van de Franstalige bevestigingsmail |
 | SITE_URL | https://hetgoede.org |
 
-Build settings: build command leeg, publish directory `.`
+Build settings: build command leeg, publish directory `.`, functions directory `.`
 
 ## Instellingen in Brevo
 
