@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>Bevestigd — Het Goede</title>
+<style>
+  @font-face{font-family:"Avenir";src:url(/assets/fonts/avenir-regular.woff2) format("woff2");font-weight:400}
+  @font-face{font-family:"Avenir";src:url(/assets/fonts/avenir-heavy.woff2) format("woff2");font-weight:700 800}
+  html,body{background:#fff}
+  body{margin:0;color:#46443E;font-family:"Avenir","Avenir Next",-apple-system,"Segoe UI",sans-serif;
+       font-size:17px;line-height:1.8;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:640px;margin:0 auto;padding:72px 26px 96px}
+  h1{color:#15130F;font-weight:800;font-size:36px;line-height:1.15;letter-spacing:-.02em;margin:0 0 18px}
+  h2{color:#15130F;font-weight:800;font-size:20px;margin:40px 0 10px}
+  p,li{margin:0 0 14px}
+  a{color:#15130F}
+  .terug{display:inline-block;margin-top:40px;font-size:15px}
+  .concept{background:#F4F1EC;padding:14px 18px;font-size:14px;margin-bottom:32px}
+</style>
+</head>
+<body><div class="wrap">
+<h1 id="kop">Je inschrijving is bevestigd</h1>
+<p id="tekst">Dank je. We houden je op de hoogte van Het Goede, en je hoort het als eerste wanneer de vereniging vorm krijgt.</p>
+<a class="terug" id="terug" href="/">Terug naar Het Goede</a>
+<script>
+if(new URLSearchParams(location.search).get('taal')==='fr'){
+  document.documentElement.lang='fr';
+  document.getElementById('kop').textContent='Ton inscription est confirmée';
+  document.getElementById('tekst').textContent='[Texte français à compléter.]';
+  document.getElementById('terug').textContent='Retour';
+}
+</script>
+</div></body></html>
