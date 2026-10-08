@@ -37,8 +37,8 @@
       "font-size:14px;line-height:1.6;color:#46443E;text-align:left}" +
       "#hg-cookies .knoppen{display:flex;gap:12px;align-items:center;margin-top:14px;flex-wrap:wrap}" +
       "#hg-cookies button{width:auto;padding:11px 22px;font-size:14px;font-family:inherit;cursor:pointer;border:0}" +
-      "#hg-cookies .ja{background:#3F5D2C;color:#fff}" +
-      "#hg-cookies .nee{background:none;color:#15130F;border-bottom:1px solid rgba(21,19,15,.2);padding:11px 2px}" +
+      "#hg-cookies .ja{background:#3F5D2C !important;color:#fff !important}" +
+      "#hg-cookies .nee{background:none !important;color:#15130F !important;border-bottom:1px solid rgba(21,19,15,.2);padding:11px 2px}" +
       "#hg-cookies a{color:#15130F;margin-left:auto;font-size:13px}";
     document.head.appendChild(css);
     var d = document.createElement("div");
