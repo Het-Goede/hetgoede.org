@@ -2,7 +2,8 @@
   publish = "."
   functions = "."
 
-# Oude en extra domeinen sturen door naar hetgoede.org
+# Extra domeinen
+# hetgoede.be -> hetgoede.org
 [[redirects]]
   from = "https://hetgoede.be/*"
   to = "https://hetgoede.org/:splat"
@@ -12,6 +13,50 @@
 [[redirects]]
   from = "https://www.hetgoede.be/*"
   to = "https://hetgoede.org/:splat"
+  status = 301
+  force = true
+
+# le-bien.org toont de Franse pagina; www en lebien.be sturen door
+[[redirects]]
+  from = "https://www.le-bien.org/*"
+  to = "https://le-bien.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://lebien.be/*"
+  to = "https://le-bien.org/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.lebien.be/*"
+  to = "https://le-bien.org/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://le-bien.org/"
+  to = "/fr.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://le-bien.org/confidentialite"
+  to = "/confidentialite.html"
+  status = 200
+  force = true
+
+# the-good.org stuurt voorlopig door naar hetgoede.org
+[[redirects]]
+  from = "https://the-good.org/*"
+  to = "https://hetgoede.org/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.the-good.org/*"
+  to = "https://hetgoede.org/"
   status = 301
   force = true
 
@@ -41,9 +86,35 @@
   to = "/?bron=bladwijzer#meedoen"
   status = 302
 
+# Pagina's
+[[redirects]]
+  from = "/fr"
+  to = "/fr.html"
+  status = 200
+
+[[redirects]]
+  from = "/fr/"
+  to = "/fr.html"
+  status = 200
+
+[[redirects]]
+  from = "/fr/confidentialite"
+  to = "/confidentialite.html"
+  status = 200
+
+[[redirects]]
+  from = "/26november"
+  to = "/26november.html"
+  status = 200
+
 [[redirects]]
   from = "/privacy"
   to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/confidentialite"
+  to = "/confidentialite.html"
   status = 200
 
 [[redirects]]

@@ -26,11 +26,19 @@
 <p id="tekst">Dank je. We houden je op de hoogte van Het Goede, en je hoort het als eerste wanneer de vereniging vorm krijgt.</p>
 <a class="terug" id="terug" href="/">Terug naar Het Goede</a>
 <script>
-if(new URLSearchParams(location.search).get('taal')==='fr'){
-  document.documentElement.lang='fr';
-  document.getElementById('kop').textContent='Ton inscription est confirmée';
-  document.getElementById('tekst').textContent='[Texte français à compléter.]';
-  document.getElementById('terug').textContent='Retour';
+var q = new URLSearchParams(location.search), fr = q.get('taal') === 'fr', lanc = q.get('soort') === 'lancering';
+if (lanc) {
+  document.getElementById('kop').textContent = 'Tot 26 november';
+  document.getElementById('tekst').textContent = 'Je inschrijving voor de lancering is bevestigd. De dag voordien sturen we je een herinnering.';
+  document.getElementById('terug').href = '/26november';
+  document.getElementById('terug').textContent = 'Terug naar de lancering';
+} else if (fr) {
+  document.documentElement.lang = 'fr';
+  document.title = 'Confirmé — Le Bien';
+  document.getElementById('kop').textContent = 'Votre inscription est confirmée';
+  document.getElementById('tekst').textContent = 'Merci. Nous vous tiendrons au courant du Bien, et vous serez parmi les premiers informés lorsque l’association prendra forme.';
+  document.getElementById('terug').href = '/fr/';
+  document.getElementById('terug').textContent = 'Retour au Bien';
 }
 </script>
 </div></body></html>

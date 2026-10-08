@@ -134,3 +134,11 @@ zoals bij untold-legacy.com. De teksten verhuizen dan naar een apart bestand dat
 4. Netlify en Brevo: wachtwoord wijzigen, gsm-nummer in Brevo aanpassen
 5. In de GitHub-koppeling van Netlify hun eigen GitHub-account koppelen
 6. Dit bestand bijwerken met wie nu wat beheert
+
+## Wijzigingen 5 oktober (versie drie)
+
+- Nieuwe pagina's: `fr.html` (Le Bien, op /fr/ en op le-bien.org), `26november.html` (inschrijving lancering), `confidentialite.html`.
+- `inschrijven.js` verwerkt nu voornaam, achternaam, land, postcode, doel, expertise en reden, en de inschrijving voor de lancering.
+- Nieuwe omgevingsvariabele in Netlify: `BREVO_EVENT_LIST_ID` (lijst "Lancering 26 november").
+- Velden in Brevo: VOORNAAM, ACHTERNAAM, LAND, POSTCODE, REDEN, AANTAL (getal), LANCERING. Ontbreekt er een, dan maakt de functie ze zelf aan.
+- Domeinen als alias toevoegen in Netlify: le-bien.org, www.le-bien.org, lebien.be, www.lebien.be, the-good.org, www.the-good.org.
