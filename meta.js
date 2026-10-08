@@ -6,9 +6,9 @@
   var SLEUTEL = "hg_cookies";
   var fr = document.documentElement.lang === "fr";
   var T = fr
-    ? { tekst: "Nous aimerions mesurer si nos publicités sur Facebook et Instagram amènent des visiteurs sur ce site. Pour cela, nous utilisons le pixel Meta, qui place des cookies. Vous êtes d’accord ?",
+    ? { tekst: "Ce site utilise des cookies. Vous êtes d’accord ?",
         ja: "D’accord", nee: "Non merci", meer: "En savoir plus", privacy: "/fr/confidentialite", link: "Cookies" }
-    : { tekst: "We meten graag of onze advertenties op Facebook en Instagram mensen naar deze site brengen. Daarvoor gebruiken we de Meta-pixel, die cookies plaatst. Ga je akkoord?",
+    : { tekst: "Deze website gebruikt cookies. Ben je akkoord?",
         ja: "Akkoord", nee: "Liever niet", meer: "Meer info", privacy: "/privacy", link: "Cookies" };
 
   function keuze() { try { return localStorage.getItem(SLEUTEL); } catch (e) { return null; } }
