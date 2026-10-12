@@ -198,6 +198,15 @@
   .kies-noot{font-size:14px;color:var(--taupe);margin-top:14px}
   .voetnoot{font-size:14px;color:var(--taupe);margin-top:10px}
   .voetnoot a{color:var(--groen)}
+  /* uitlijning en taalkeuze */
+  .topbar .in{min-height:54px}
+  .taalkeuze{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:13px}
+  .taalkeuze span,.taalkeuze a{padding:6px 14px;line-height:1;text-decoration:none;color:var(--ink)}
+  .taalkeuze .actief{background:var(--groen);color:#fff}
+  details summary{position:relative;padding-left:30px;padding-right:30px}
+  details summary:after{position:absolute;right:0;top:50%;transform:translateY(-50%)}
+  fieldset.keuze label,.akkoord{display:block;text-align:center}
+  fieldset.keuze input,.akkoord input{display:inline-block;vertical-align:middle;margin:0 8px 3px 0}
 </style>
 </head>
 <body>
@@ -205,8 +214,7 @@
 
 <div class="topbar">
   <div class="in">
-    <a class="naam" href="#">het goede</a>
-    <a href="#kies">Schrijf je in</a><a class="taal" href="/fr/" lang="fr">FR</a>
+    <div class="taalkeuze" aria-label="Taal"><span class="actief" lang="nl">NL</span><a href="https://le-bien.org/" lang="fr" hreflang="fr">FR</a></div>
   </div>
 </div>
 
