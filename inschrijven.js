@@ -10,7 +10,8 @@
 
 const DOELEN = {
   steun: "Steun tonen",
-  volgen: "Op de hoogte blijven en mening geven",
+  volgen: "Op de hoogte blijven",
+  meewerken: "Meewerken, weet nog niet hoe",
   expertise: "Expertise inzetten",
 };
 // velden die in Brevo moeten bestaan; ontbreekt er een, dan maakt de functie ze aan
