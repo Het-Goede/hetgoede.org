@@ -6,7 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light only">
 <meta name="supported-color-schemes" content="light">
-<title>Le Bien — un nouveau récit pour l’humain, la planète et les générations futures</title>
+<title>Le bien — une nouvelle histoire pour l’humanité, la planète et les générations futures</title>
+<meta name="description" content="Une nouvelle histoire pour l’humanité, la planète et les générations futures. Le livre d’Etienne Flor&eacute;, aux éditions Untold.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://le-bien.org/">
+<meta property="og:title" content="Le bien">
+<meta property="og:description" content="Une nouvelle histoire pour l’humanité, la planète et les générations futures.">
+<meta property="og:image" content="https://le-bien.org/og-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <style>
   @font-face{font-family:"Avenir";src:url(/avenir-light.woff2) format("woff2");
              font-weight:300;font-style:normal;font-display:swap}
@@ -16,9 +25,10 @@
              font-weight:700 800;font-style:normal;font-display:swap}
 
   :root{color-scheme:light only;--ink:#15130F;--text:#46443E;--taupe:#8C857A;
-        --line:rgba(21,19,15,.09);--groen:#3F5D2C}
+        --line:rgba(21,19,15,.09);--groen:#248632}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
+  #kies{scroll-margin-top:28vh}
   html,body{background:#fff}
   body{color:var(--text);font-family:"Avenir","Avenir Next",-apple-system,"Segoe UI",sans-serif;
        font-weight:400;font-size:17px;line-height:1.85;font-synthesis:none;
@@ -142,7 +152,7 @@
     html,body{background:#fff !important;color:#46443E !important}
     h1,h2,.statement p,.topbar a,input,select{color:#15130F !important}
     .eyebrow,.who,.fine,.src,.frag,footer .c,.topbar .uit,.mark{color:#8C857A !important}
-    .btn-primary,button{background:#3F5D2C !important;color:#fff !important}
+    .btn-primary,button{background:#248632 !important;color:#fff !important}
     .btn-plain{color:#15130F !important}
     .topbar{background:rgba(255,255,255,.92) !important}
   }
@@ -182,6 +192,33 @@
   .omgeving{color:var(--groen);margin-top:16px}
   .scheiding{display:block;width:44px;height:1px;background:var(--groen);opacity:.45;margin:34px auto 30px}
   .topbar a.taal{font-size:12px;letter-spacing:.08em;color:var(--taupe);border:1px solid var(--line);padding:3px 8px;border-radius:2px}
+  .keuzes{display:flex;flex-direction:column;gap:12px;max-width:380px;margin:30px auto 0}
+  .keuzes .btn{width:100%;margin:0;text-align:center}
+  /* versie 4 */
+  header{padding:64px 0 6px}
+  header .groei{width:150px;margin:34px auto 0}
+  section{padding:54px 0}
+  #boek{padding-top:10px}
+  .topbar .in{justify-content:flex-end}
+  .topbar a.naam{margin-right:auto;font-weight:800;letter-spacing:-.01em}
+  .boekfoto{display:block;width:210px;height:auto;margin:6px auto 30px;border:1px solid rgba(21,19,15,.07)}
+  .kies{display:flex;flex-direction:column;gap:12px;max-width:440px;margin:36px auto 0}
+  .kies .btn{width:100%;text-align:center;margin:0}
+  .kies .btn-plain{border:1.5px solid var(--groen);color:var(--groen);padding:16px 22px}
+  .kies-noot{font-size:14px;color:var(--taupe);margin-top:14px}
+  .voetnoot{font-size:14px;color:var(--taupe);margin-top:10px}
+  .voetnoot a{color:var(--groen)}
+  /* uitlijning en taalkeuze */
+  .topbar .in{min-height:54px}
+  .taalkeuze{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-size:13px}
+  .taalkeuze span,.taalkeuze a{padding:6px 14px;line-height:1;text-decoration:none;color:var(--ink)}
+  .taalkeuze .actief{background:var(--groen);color:#fff}
+  details summary{position:relative;padding-left:30px;padding-right:30px}
+  details summary:after{position:absolute;right:0;top:50%;transform:translateY(-50%)}
+  fieldset.keuze label,.akkoord{display:block;text-align:center}
+  fieldset.keuze input,.akkoord input{display:inline-block;vertical-align:middle;margin:0 8px 3px 0}
+  .topbar .in{justify-content:space-between}
+  .bestel-top{font-size:13px;line-height:1;color:var(--groen);border:1px solid var(--groen);border-radius:999px;padding:6px 14px;text-decoration:none}
 </style>
 </head>
 <body>
@@ -189,86 +226,79 @@
 
 <div class="topbar">
   <div class="in">
-    <div class="mark" aria-label="Untold et Le Bien"><svg class="ap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4.38" stroke-linecap="butt" aria-hidden="true"><path d="M12 2.19 A9.81 9.81 0 0 0 2.19 12"/><path d="M12 21.81 A9.81 9.81 0 0 0 21.81 12"/></svg><span>&times;</span><svg class="gk" viewBox="0 0 1100 962" aria-hidden="true"><use href="#gk" fill="#3F5D2C"/></svg></div>
-    <div class="uit"><span class="t">Une publication de</span>
-      <img src="/untold-wordmerk-1.png" alt="Untold"></div>
-    <a href="#meedoen">Je m’inscris</a><a class="taal" href="https://hetgoede.org/" lang="nl">NL</a>
+    <a class="bestel-top" href="#meedoen">Je m’inscris</a><div class="taalkeuze" aria-label="Taal"><a href="https://hetgoede.org/" lang="nl" hreflang="nl">NL</a><span class="actief" lang="fr">FR</span></div>
   </div>
 </div>
 
 <header>
   <div class="wrap reveal">
-    <div class="groei" aria-hidden="true"><img src="/stap1.png" alt="" style="animation:groeiIn .42s ease 0.00s forwards, groeiUit .01s linear 0.76s forwards"><img src="/stap2.png" alt="" style="animation:groeiIn .42s ease 0.34s forwards, groeiUit .01s linear 1.10s forwards"><img src="/stap3.png" alt="" style="animation:groeiIn .42s ease 0.68s forwards, groeiUit .01s linear 1.44s forwards"><img src="/stap4.png" alt="" style="animation:groeiIn .42s ease 1.02s forwards, groeiUit .01s linear 1.78s forwards"><img src="/stap5.png" alt="" style="animation:groeiIn .42s ease 1.36s forwards, groeiUit .01s linear 2.12s forwards"><img src="/stap6.png" alt="" style="animation:groeiIn .42s ease 1.70s forwards"></div>
-    <h1>Le Bien</h1>
-    <p class="lead">Un nouveau récit pour l’humain, la planète<br>et les générations futures.</p>
-    <p class="who">Etienne Flor&eacute; et Geert Degrande</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="#meedoen">Je m’inscris</a>
-    </div>
+    <h1>Le bien</h1>
+    <p class="lead">Une nouvelle histoire pour l’humanité,<br>la planète et les générations futures.</p>
+    <div class="groei" aria-hidden="true"><img src="/groei1.png" alt="" style="animation:groeiIn .74s ease 0.00s forwards, groeiUit .01s linear 1.34s forwards"><img src="/groei2.png" alt="" style="animation:groeiIn .74s ease 0.60s forwards, groeiUit .01s linear 1.94s forwards"><img src="/groei3.png" alt="" style="animation:groeiIn .74s ease 1.20s forwards, groeiUit .01s linear 2.54s forwards"><img src="/groei4.png" alt="" style="animation:groeiIn .74s ease 1.80s forwards, groeiUit .01s linear 3.14s forwards"><img src="/groei5.png" alt="" style="animation:groeiIn .74s ease 2.40s forwards, groeiUit .01s linear 3.74s forwards"><img src="/groei6.png" alt="" style="animation:groeiIn .74s ease 3.00s forwards"></div>
   </div>
 </header>
 
-<div class="rule"><span class="l"></span><div class="mark" aria-label="Untold et Le Bien"><svg class="ap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4.38" stroke-linecap="butt" aria-hidden="true"><path d="M12 2.19 A9.81 9.81 0 0 0 2.19 12"/><path d="M12 21.81 A9.81 9.81 0 0 0 21.81 12"/></svg><span>&times;</span><svg class="gk" viewBox="0 0 1100 962" aria-hidden="true"><use href="#gk" fill="#3F5D2C"/></svg></div><span class="l"></span></div>
 
-<section>
+<section id="samenleving">
   <div class="wrap reveal">
-    <img class="blad" src="/blad.png" alt="" aria-hidden="true">
     <h2>La société que nous voulons</h2>
-    <p>Ne rêvons-nous pas tous d’un monde plein d’humanité, de paix, d’empathie, de compréhension, de solidarité et d’amour ? Et de liberté et d’une prospérité digne pour tous ?</p>
-    <p>Le bien est déjà présent en chaque être humain. Mais il n’agit pas encore de concert. Partout dans le monde, des centaines d’initiatives œuvrent pour le bien, chacune sur son île. Ce livre jette des ponts.</p>
-    <p class="oproep">Soyons ambitieux, ensemble.</p>
+    <p>Quand nous pensons à la société que nous souhaitons, la plupart d’entre nous pensent la même chose. Pourtant, nous ne semblons pas nous en approcher.</p>
+    <p>Partout dans le monde, des personnes et des organisations font le bien. Seulement, il n’est pas encore inscrit dans nos systèmes et n’agit pas encore de concert à grande échelle.</p>
+    <p>Ce livre nomme ce qui fait vraiment notre humanité. Il nous inspire à donner le meilleur de nous-mêmes et à nous unir en tant qu’humanité. Dans l’égalité et la joie de vivre. Avec sagesse, souplesse de pensée et d’action, coopération et bon sens. À partir du bien.</p>
+    <p>Les idéologies du capitalisme et du communisme fonctionnent du haut vers le bas. L’idéologie du bien fonctionne du bas vers le haut.</p>
+    <p class="oproep">Soyons ambitieux, ensemble !</p>
   </div>
 </section>
 
-<section>
+<section id="boek">
   <div class="wrap reveal">
-    <img class="blad" src="/blad.png" alt="" aria-hidden="true">
     <h2>Le livre</h2>
     <p class="citaat">Le bien n’est pas naïf. Il a simplement rarement été tenté à grande échelle.</p>
-    <p>Etienne Flor&eacute; (78 ans) a écrit le livre qu’il veut léguer à ses enfants et petits-enfants, et à tous ceux qui viendront après nous. Une vie d’entrepreneur, de vie en commun et de doutes l’a conduit à une conviction : le bien est en chacun de nous.</p>
+    <img class="boekfoto" src="/cover-fr.webp" alt="Couverture du livre Le bien">
+    <p>Une vie d’entrepreneur, de vie en commun et de doutes a mené Etienne à une conviction. Le bien est en chacun de nous.</p>
     <p>Il part du big bang et termine avec une fillette de douze ans qui demande s’il y a toujours de l’espoir. Entre les deux, les grandes questions de l’existence humaine.</p>
-    <div class="actions cta"><a class="btn btn-primary" href="#meedoen">Je m’inscris</a></div>
+    <p>Ce livre n’a pas toutes les réponses. Il est une impulsion. Un point de départ global, en route vers une vision.</p>
+    <div class="kies" id="kies">
+      <a class="btn btn-primary" href="#meedoen">Je m’inscris</a>
+      <a class="btn btn-plain" href="https://hetgoede.org/26november#earlybird" lang="nl">Commander l’édition néerlandaise</a>
+      <a class="btn btn-plain" href="https://hetgoede.org/26november" lang="nl">Présentation du 26 novembre (en néerlandais)</a>
+    </div>
+    <p class="kies-noot">L’édition française paraît aux éditions Untold. Inscrivez-vous pour être parmi les premiers informés.</p>
   </div>
 </section>
 
-<div class="rule"><span class="l"></span><div class="mark" aria-label="Untold et Le Bien"><svg class="ap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4.38" stroke-linecap="butt" aria-hidden="true"><path d="M12 2.19 A9.81 9.81 0 0 0 2.19 12"/><path d="M12 21.81 A9.81 9.81 0 0 0 21.81 12"/></svg><span>&times;</span><svg class="gk" viewBox="0 0 1100 962" aria-hidden="true"><use href="#gk" fill="#3F5D2C"/></svg></div><span class="l"></span></div>
-
 <section>
   <div class="wrap reveal">
-    <img class="blad" src="/blad.png" alt="" aria-hidden="true">
     <h2>Une vision pour le siècle à venir</h2>
     <p>Au cours des cent prochaines années, il doit être possible, à partir du bien, d’arriver à :</p>
     <ul class="visie">
       <li>une vie harmonieuse et en paix entre tous les peuples et tous les êtres vivants</li>
-      <li>le bonheur des neuf milliards d’êtres humains sur notre terre, dans le respect de leur diversité</li>
+      <li>le bonheur* des neuf milliards d’êtres humains sur notre terre, dans le respect de leur diversité</li>
       <li>une planète qui ne dépasse pas ses limites.</li>
     </ul>
-    <p class="omgeving">Chacun selon les possibilités de son propre environnement.</p>
-    <span class="scheiding" aria-hidden="true"></span>
-    <p>Pour cela, l’économie doit notamment se remettre au service de l’humain et de la nature. Nous repensons les notions d’argent, de possession, de propriété, de travail, de productivité et de croissance. Nous mettons le fort développement de nos capacités cognitives au service de l’enseignement, des soins, de l’agriculture, de la mobilité, de la communication et de la culture, de manière humaine, et pour apporter une prospérité digne à tous.</p>
-    <p>En paroles et en actes, nous accordons plus d’importance à une population résiliente, au soin, à l’interdépendance, à l’introspection, à la curiosité, à la réflexion, à l’humour, à l’amour et à la justice qu’au progrès matériel.</p>
-    <div class="actions cta"><a class="btn btn-primary" href="#meedoen">Je m’inscris</a></div>
+    <p class="voetnoot">* Voir les sept éléments du bonheur dans le livre.</p>
+    <p>Pour cela, mieux vaut remettre en question notre définition du succès. Nous repensons des notions comme l’argent, la possession, la propriété, la prospérité, la croissance, &hellip; En paroles et en actes, nous accordons plus d’importance à une population résiliente, au soin, à l’interdépendance, à l’introspection, à la curiosité, à la réflexion, à l’humour, à l’amour et à la justice qu’au progrès matériel.</p>
   </div>
 </section>
 
-<section>
+<section id="vereniging">
   <svg class="water" viewBox="0 0 1100 962" aria-hidden="true"><use href="#gk" fill="currentColor"/></svg>
   <div class="wrap reveal">
-    <img class="blad" src="/blad.png" alt="" aria-hidden="true">
-    <h2>Une association qui grandit ensemble</h2>
-    <p>L’histoire ne s’arrête pas à la dernière page. Autour du livre naît une association qui approfondit ces idées, dans le dialogue et à partir de la base.</p>
-    <p>Elle commence petite. Ce qu’elle deviendra, ses membres le décideront ensemble, dans un dialogue sincère.</p>
-    <p>Nul besoin d’adhérer à tout ce que dit le livre pour participer.</p>
-    <div class="actions cta"><a class="btn btn-primary" href="#meedoen">Je m’inscris</a></div>
+    <h2>Vous en êtes ?</h2>
+    <p>L’histoire ne s’arrête pas à la dernière page. Au contraire. C’est le début d’une association qui avance de manière constructive et pragmatique vers cette vision. Ensemble et dans le dialogue. À partir de nos différences et de notre égalité. À partir d’une véritable démocratie.</p>
+    <p>Elle commence petite et voit grand. En unissant les forces, elle veut devenir un mouvement qui contribue à orienter le monde.</p>
+    <div class="kies">
+      <a class="btn btn-primary" href="#meedoen">Je m’inscris</a>
+      <a class="btn btn-plain" href="https://hetgoede.org/26november#earlybird" lang="nl">Commander l’édition néerlandaise</a>
+      <a class="btn btn-plain" href="https://hetgoede.org/26november" lang="nl">Présentation du 26 novembre (en néerlandais)</a>
+    </div>
+    <p class="kies-noot">L’édition française paraît aux éditions Untold. Inscrivez-vous pour être parmi les premiers informés.</p>
   </div>
 </section>
-
-
 
 <section id="meedoen">
   <svg class="water" viewBox="0 0 1100 962" aria-hidden="true"><use href="#gk" fill="currentColor"/></svg>
   <div class="wrap reveal">
-    <img class="blad" src="/blad.png" alt="" aria-hidden="true">
     <h2>L’association voit le jour</h2>
     <p>Envie de participer, ou d’abord de rester au courant ? Inscrivez-vous ici.</p>
     <div id="formulier">
@@ -286,8 +316,9 @@
         <fieldset class="keuze">
           <legend>Que souhaitez-vous ?</legend>
           <label><input type="radio" name="doel" value="steun" checked> Je veux montrer mon soutien. Pour l’instant, je n’ai pas le temps de contribuer activement.</label>
-          <label><input type="radio" name="doel" value="volgen"> Je veux savoir comment les choses évoluent, et pouvoir donner mon avis.</label>
-          <label><input type="radio" name="doel" value="expertise"> J’ai une expertise que je souhaite mettre à disposition.</label>
+          <label><input type="radio" name="doel" value="volgen"> Je veux rester au courant. Je déciderai plus tard si je participe plus activement.</label>
+          <label><input type="radio" name="doel" value="meewerken"> Je veux contribuer. Comment, je ne le sais pas encore.</label>
+          <label><input type="radio" name="doel" value="expertise"> J’ai une expertise que je veux mettre au service de l’association.</label>
         </fieldset>
         <div id="expertiseveld" style="display:none">
           <label for="expertise">Décrivez brièvement votre expertise</label>
@@ -295,7 +326,7 @@
         </div>
         <label for="reden">Quelle est la principale raison de votre inscription ?</label>
         <textarea id="reden" name="reden" rows="3"></textarea>
-        <label class="akkoord"><input type="checkbox" name="akkoord" required><span>J’accepte que mes données soient utilisées pour me tenir au courant du Bien et de l’association en création, et qu’elles lui soient transmises dès qu’elle existera. Plus d’infos dans la <a href="/fr/confidentialite">déclaration de confidentialité</a>.</span></label>
+        <label class="akkoord"><input type="checkbox" name="akkoord" required><span>J’accepte que mes données soient utilisées pour me tenir au courant du bien et de l’association en création, et qu’elles lui soient transmises dès qu’elle existera. Plus d’infos dans la <a href="/fr/confidentialite">déclaration de confidentialité</a>.</span></label>
         <input type="text" name="website" tabindex="-1" autocomplete="off" class="potje" aria-hidden="true">
         <button type="submit" id="verstuur">Je m’inscris</button>
         <p class="fine" id="foutmelding" role="alert" style="display:none"></p>
@@ -304,41 +335,48 @@
     <div id="dank">
       <p class="ok" style="margin-top:30px">C’est fait</p>
       <h2>Vous êtes sur la liste</h2>
-      <p>Nous venons de vous envoyer un e-mail. Cliquez sur le lien pour confirmer votre inscription. Rien reçu ? Jetez un œil dans vos spams.</p>
+      <p>Nous venons de vous envoyer un e-mail. Cliquez sur le lien qu’il contient pour confirmer votre inscription. Rien reçu ? Jetez un œil dans vos spams.</p>
     </div>
   </div>
 </section>
 
 <section id="vragen">
   <div class="wrap reveal">
-    <img class="blad" src="/blad.png" alt="" aria-hidden="true">
     <h2>Questions fréquentes</h2>
     <details>
       <summary><span class="vr">De quoi parle le livre ?</span></summary>
-      <div class="body"><p>De ce dont les gens ont besoin pour bien vivre, et de la manière dont nous vivons ensemble, entre nous et avec la planète. Etienne part des origines de l’être humain pour arriver à une proposition pour la société de demain.</p></div>
+      <div class="body"><p>Le bien pose la question de savoir comment, en tant qu’êtres humains, nous pouvons bien vivre : entre nous, avec la planète et avec les générations qui viendront après nous.</p><p>Etienne Flor&eacute; part de l’évolution de l’être humain et aborde ensuite des thèmes comme le bonheur, la liberté, l’égalité, la propriété, l’économie, la démocratie et l’écologie. Au centre : la recherche d’une société où une prospérité digne pour tous va de pair avec la liberté humaine et le respect des limites de la planète.</p><p>Le livre se termine par une proposition pour déployer l’idéologie du bien. Il trace une direction, avec pour cœur les valeurs humaines, le bon sens, la coopération et une véritable démocratie.</p></div>
     </details>
     <details>
-      <summary><span class="vr">Le Bien est-il un parti politique ?</span></summary>
-      <div class="body"><p>Le Bien est un livre, et autour de ce livre naît une association. Ce que fera cette association, ses membres le décideront ensemble, de manière démocratique.</p></div>
+      <summary><span class="vr">Le bien est-il un parti politique ?</span></summary>
+      <div class="body"><p>Non. Le bien est aujourd’hui une association en construction.</p><p>L’association veut rassembler des personnes qui souhaitent réfléchir et travailler ensemble autour de l’idéologie du bien, par le dialogue et la prise de décision démocratique.</p><p>Le livre laisse ouverte la question de savoir si l’association jouera plus tard aussi un rôle politique. Ce choix, les membres le feront ensemble, de manière démocratique, lorsque l’association sera prête. Ce qui compte, c’est le changement de société.</p></div>
     </details>
     <details>
       <summary><span class="vr">Faut-il être d’accord avec tout le livre ?</span></summary>
-      <div class="body"><p>Le livre est une proposition et un point de départ. Le dialogue fait partie de la démarche : vous pouvez compléter, questionner et contredire.</p></div>
+      <div class="body"><p>Non, bien au contraire.</p><p>Le livre n’impose aucune vérité. Beaucoup d’idées y figurent délibérément comme des propositions et des pistes de réflexion. Pensez par vous-même : en quoi vous reconnaissez-vous, sur quoi avez-vous des doutes, que feriez-vous autrement ?</p><p>Au sein de l’association non plus, tout le monde ne doit pas être du même avis sur tout. Des points de vue différents mènent justement, par le dialogue et la décision démocratique, à de meilleures propositions.</p><p>Inutile donc d’adhérer à chaque idée pour réfléchir ou construire avec nous.</p></div>
     </details>
     <details>
       <summary><span class="vr">Le livre est-il scientifique ?</span></summary>
-      <div class="body"><p>Le livre s’appuie sur l’expérience de vie, des conversations et des lectures. C’est une proposition de société personnelle, écrite pour ouvrir le dialogue.</p></div>
+      <div class="body"><p>Non. Le bien n’est pas un livre scientifique, et ne se présente pas comme tel.</p><p>Il est construit à partir de l’expérience de vie et d’entrepreneur d’Etienne, de conversations, de livres, d’articles et de médias, et de ses réflexions personnelles sur l’humain et la société. Il contient des éclairages historiques, économiques, scientifiques et politiques, et s’en sert pour développer un récit de société et une vision d’avenir.</p><p>Voyez-le comme une proposition de société personnelle, qui invite à la discussion et à l’approfondissement.</p></div>
+    </details>
+    <details>
+      <summary><span class="vr">Vouloir faire jouer un rôle au bien sur la scène mondiale, n’est-ce pas naïf ?</span></summary>
+      <div class="body"><p>Réaliser le bien devient possible lorsque beaucoup de personnes le portent. C’est pourquoi nous unissons les forces de toutes les personnes et organisations qui pensent et agissent déjà à partir du bien.</p><p>Beaucoup de personnes et d’organisations veulent un changement de système. Seulement, elles restent souvent petites et dispersées. Coopérer à grande échelle est la plus grande force pour construire, pacifiquement et à l’échelle mondiale, une alternative à l’idéologie du capitalisme : l’idéologie du bien.</p><p>La technologie rend aujourd’hui la coopération à grande échelle plus accessible que jamais.</p></div>
+    </details>
+    <details>
+      <summary><span class="vr">Que se passe-t-il le 26 novembre ?</span></summary>
+      <div class="body"><p>L’édition néerlandaise, Het goede, est présentée à Lochristi, avec les auteurs, un panel et une réception. Portes à 17 h, début à 17 h 30. La présentation se déroule en néerlandais. <a href="https://hetgoede.org/26november" lang="nl">Inscription à la présentation</a>.</p></div>
     </details>
     <details>
       <summary><span class="vr">Comment fonctionne l’association ?</span></summary>
-      <div class="body"><p>À partir de quelques principes simples. Choisir raisonnablement ce qui est faisable aujourd’hui, en gardant le long terme à l’esprit. Pas à pas. À partir de la base. Dans le respect des idées de chacun. Et avec une voix égale pour tous.</p></div>
+      <div class="body"><p>L’association en est à ses débuts et doit encore être lancée. Le livre donne la direction, la suite reste ouverte.</p><p>L’objectif est de rassembler des personnes qui veulent explorer comment l’idéologie du bien peut être développée et appliquée. Le fonctionnement part d’une véritable démocratie : écouter des points de vue différents, dialoguer, construire des connaissances ensemble et arriver ainsi à des décisions réalisables.</p><p>Vous choisissez vous-même jusqu’où vous allez : rester au courant, participer à des conversations et des rencontres, ou contribuer activement à construire l’association.</p><p>À plus long terme, l’association pourra aussi élaborer des propositions sociétales et politiques. D’abord grandit un mouvement fort et démocratique, qui développe ses idées et son fonctionnement avec ses membres.</p></div>
     </details>
     <details>
       <summary><span class="vr">Que faites-vous de mes données ?</span></summary>
-      <div class="body"><p>Nous les utilisons pour vous tenir au courant du Bien et de l’association. Vous pouvez vous désinscrire à tout moment, en bas de chaque e-mail. Plus d’infos dans la <a href="/fr/confidentialite">déclaration de confidentialité</a>.</p></div>
+      <div class="body"><p>Nous les utilisons pour vous tenir au courant du bien et de l’association. Vous pouvez vous désinscrire à tout moment, en bas de chaque e-mail. Plus d’infos dans la <a href="/fr/confidentialite">déclaration de confidentialité</a>.</p></div>
     </details>
 <div class="social" style="margin-top:44px">
-      <a data-linkedin href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.9 21.5h4.16V9.75H2.9V21.5zM9.7 9.75h3.99v1.6h.06c.56-1.02 1.93-2.1 3.97-2.1 4.24 0 5.02 2.62 5.02 6.04v6.21h-4.15v-5.5c0-1.31-.02-3-1.9-3-1.9 0-2.2 1.43-2.2 2.9v5.6H9.7V9.75z"/></svg> Suivez Het Goede sur LinkedIn</a>
+      <a data-linkedin href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.9 21.5h4.16V9.75H2.9V21.5zM9.7 9.75h3.99v1.6h.06c.56-1.02 1.93-2.1 3.97-2.1 4.24 0 5.02 2.62 5.02 6.04v6.21h-4.15v-5.5c0-1.31-.02-3-1.9-3-1.9 0-2.2 1.43-2.2 2.9v5.6H9.7V9.75z"/></svg> Suivez Het goede sur LinkedIn</a>
       <a href="https://www.instagram.com/untold.booksthatmatter/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.8 3.8 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9c-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.98c-3.14 0-3.51.01-4.75.07-1.15.05-1.77.24-2.18.4-.55.22-.94.47-1.35.88-.41.41-.66.8-.88 1.35-.16.41-.35 1.03-.4 2.18-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.05 1.15.24 1.77.4 2.18.22.55.47.94.88 1.35.41.41.8.66 1.35.88.41.16 1.03.35 2.18.4 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c1.15-.05 1.77-.24 2.18-.4.55-.22.94-.47 1.35-.88.41-.41.66-.8.88-1.35.16-.41.35-1.03.4-2.18.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-1.15-.24-1.77-.4-2.18a3.6 3.6 0 0 0-.88-1.35c-.41-.41-.8-.66-1.35-.88-.41-.16-1.03-.35-2.18-.4-1.24-.06-1.61-.07-4.75-.07zm0 3.37a5.45 5.45 0 1 1 0 10.9 5.45 5.45 0 0 1 0-10.9zm0 8.99a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm6.94-9.21a1.27 1.27 0 1 1-2.55 0 1.27 1.27 0 0 1 2.55 0z"/></svg> Suivez Untold sur Instagram</a>
     </div>
     
@@ -346,20 +384,11 @@
   </div>
 </section>
 
-<section id="bestellen">
-  <div class="wrap reveal">
-    <img class="blad" src="/blad.png" alt="" aria-hidden="true">
-    <h2>Parution</h2>
-    <p>Le Bien paraît aux éditions Untold. Inscrivez-vous pour être parmi les premiers informés. L’édition néerlandaise, Het Goede, paraît le 26 novembre 2026.</p>
-    <div class="actions"><a class="btn btn-primary" href="#meedoen">Je m’inscris</a><a class="btn btn-plain" href="https://hetgoede.org/" lang="nl">Het Goede</a></div>
-  </div>
-</section>
-
 <footer>
   <div class="wrap">
-    <div class="mark" aria-label="Untold et Le Bien"><svg class="ap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4.38" stroke-linecap="butt" aria-hidden="true"><path d="M12 2.19 A9.81 9.81 0 0 0 2.19 12"/><path d="M12 21.81 A9.81 9.81 0 0 0 21.81 12"/></svg><span>&times;</span><svg class="gk" viewBox="0 0 1100 962" aria-hidden="true"><use href="#gk" fill="#3F5D2C"/></svg></div>
+    <div class="mark" aria-label="Untold et Le bien"><svg class="ap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4.38" stroke-linecap="butt" aria-hidden="true"><path d="M12 2.19 A9.81 9.81 0 0 0 2.19 12"/><path d="M12 21.81 A9.81 9.81 0 0 0 21.81 12"/></svg><span>&times;</span><svg class="gk" viewBox="0 0 1100 962" aria-hidden="true"><use href="#gk" fill="#248632"/></svg></div>
     <img src="/untold-wordmerk-2.png" alt="Untold">
-    <div class="c">Le Bien est une publication d’Untold<br>untold-books.com</div>
+    <div class="c">Le bien est une publication d’Untold: Books That Matter<br>untold-books.com</div>
   </div>
 </footer>
 
@@ -367,7 +396,7 @@
 
 <script>
 /* ---- instellingen ---- */
-var BESTEL_URL = "";     /* productpagina in de webshop van Untold */
+var BESTEL_URL = "https://shop.untold-publishing.com/products/het-goede";     /* productpagina in de webshop van Untold */
 var LINKEDIN_URL = "https://www.linkedin.com/company/146680064/";   /* adres van de LinkedIn-pagina Het Goede */
 var TAAL = document.documentElement.lang === "fr" ? "fr" : "nl";
 
@@ -376,7 +405,7 @@ document.querySelectorAll("[data-linkedin]").forEach(function(a){ if(LINKEDIN_UR
 
 var BRON = (new URLSearchParams(location.search).get("bron") || "website").slice(0, 40);
 var TXT = TAAL === "fr"
-  ? {leeg: "Indiquez votre nom et votre adresse e-mail, et cochez la case du consentement.", fout: "Une erreur s’est produite.", later: " Réessayez plus tard, ou écrivez à info@hetgoede.org."}
+  ? {leeg: "Indique ton nom et ton adresse e-mail, et coche la case du consentement.", fout: "Une erreur s’est produite.", later: " Réessaie plus tard, ou écris à info@hetgoede.org."}
   : {leeg: "Vul je naam en e-mailadres in, en vink de toestemming aan.", fout: "Er liep iets mis.", later: " Probeer het later opnieuw, of mail naar info@hetgoede.org."};
 
 (function(){
