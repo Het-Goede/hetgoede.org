@@ -1,0 +1,165 @@
+# Teksten beheren voor hetgoede.org en le-bien.org
+# Aanmelden via DecapBridge. Vul de site-ID in na het aanmaken van de site op decapbridge.com.
+backend:
+  name: git-gateway
+  repo: Het-Goede/hetgoede.org
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/DECAPBRIDGE_SITE_ID
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    update: Tekst aangepast via CMS - {{author-name}}
+
+logo_url: https://hetgoede.org/cover.webp
+site_url: https://hetgoede.org
+display_url: https://hetgoede.org
+locale: "nl"
+media_folder: "cms/beeld"
+public_folder: "/cms/beeld"
+
+collections:
+  - name: "teksten"
+    label: "Teksten"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "nl"
+        label: "Nederlands · hetgoede.org"
+        file: "cms/nl.json"
+        description: "Alle teksten van hetgoede.org. Opslaan zet de wijziging binnen een minuut online."
+        fields:
+          - { label: "Browsertitel", name: "titel", widget: "string", hint: "Titel in het tabblad en in Google" }
+          - { label: "Beschrijving voor Google", name: "beschrijving", widget: "text" }
+          - { label: "Titel bij delen (LinkedIn, WhatsApp)", name: "og_titel", widget: "string" }
+          - { label: "Beschrijving bij delen", name: "og_beschrijving", widget: "text" }
+          - { label: "Knop bovenaan", name: "bestel_top", widget: "string" }
+          - { label: "Grote titel", name: "hoofdtitel", widget: "string" }
+          - { label: "Ondertitel onder de grote titel", name: "ondertitel", widget: "text", hint: "Een nieuwe regel geeft een regeleinde" }
+          - { label: "Samenleving · titel", name: "s_titel", widget: "string" }
+          - { label: "Samenleving · alinea 1", name: "s_p1", widget: "text" }
+          - { label: "Samenleving · alinea 2", name: "s_p2", widget: "text" }
+          - { label: "Samenleving · alinea 3", name: "s_p3", widget: "text" }
+          - { label: "Samenleving · alinea 4", name: "s_p4", widget: "text" }
+          - { label: "Samenleving · oproep", name: "s_oproep", widget: "string" }
+          - { label: "Boek · titel", name: "b_titel", widget: "string" }
+          - { label: "Boek · citaat", name: "b_citaat", widget: "text" }
+          - { label: "Boek · alinea 1", name: "b_p1", widget: "text" }
+          - { label: "Boek · alinea 2", name: "b_p2", widget: "text" }
+          - { label: "Boek · alinea 3", name: "b_p3", widget: "text" }
+          - { label: "Knoppen · knop 1 (bestellen)", name: "knop_bestel", widget: "string", hint: "Staat onder het boek en onder de vereniging" }
+          - { label: "Knoppen · knop 2", name: "knop_2", widget: "string" }
+          - { label: "Knoppen · knop 3", name: "knop_3", widget: "string" }
+          - { label: "Knoppen · noot onder de knoppen", name: "knop_noot", widget: "text" }
+          - { label: "Visie · titel", name: "v_titel", widget: "string" }
+          - { label: "Visie · inleiding", name: "v_intro", widget: "text" }
+          - { label: "Visie · punt 1", name: "v_punt1", widget: "text" }
+          - { label: "Visie · punt 2", name: "v_punt2", widget: "text" }
+          - { label: "Visie · punt 3", name: "v_punt3", widget: "text" }
+          - { label: "Visie · voetnoot", name: "v_voetnoot", widget: "string" }
+          - { label: "Visie · slotalinea", name: "v_slot", widget: "text" }
+          - { label: "Doe je mee · titel", name: "d_titel", widget: "string" }
+          - { label: "Doe je mee · alinea 1", name: "d_p1", widget: "text" }
+          - { label: "Doe je mee · alinea 2", name: "d_p2", widget: "text" }
+          - { label: "Formulier · titel", name: "f_titel", widget: "string" }
+          - { label: "Formulier · inleiding", name: "f_intro", widget: "text" }
+          - { label: "Formulier · veld voornaam", name: "f_voornaam", widget: "string" }
+          - { label: "Formulier · veld achternaam", name: "f_achternaam", widget: "string" }
+          - { label: "Formulier · veld land", name: "f_land", widget: "string" }
+          - { label: "Formulier · veld postcode", name: "f_postcode", widget: "string" }
+          - { label: "Formulier · veld e-mail", name: "f_mail", widget: "string" }
+          - { label: "Formulier · voorbeeld e-mailadres", name: "f_mail_voorbeeld", widget: "string" }
+          - { label: "Formulier · vraag boven de keuzes", name: "f_vraag", widget: "string" }
+          - { label: "Keuze 1 (steun)", name: "keuze_steun", widget: "text" }
+          - { label: "Keuze 2 (op de hoogte blijven)", name: "keuze_volgen", widget: "text" }
+          - { label: "Keuze 3 (meewerken)", name: "keuze_meewerken", widget: "text" }
+          - { label: "Keuze 4 (expertise)", name: "keuze_expertise", widget: "text", hint: "Bij deze keuze verschijnt het veld om de expertise toe te lichten" }
+          - { label: "Formulier · veld expertise", name: "f_expertise", widget: "string" }
+          - { label: "Formulier · veld reden", name: "f_reden", widget: "string" }
+          - { label: "Formulier · toestemming", name: "f_akkoord", widget: "text", hint: "Link: [tekst](adres)" }
+          - { label: "Formulier · knop", name: "f_knop", widget: "string" }
+          - { label: "Na inschrijven · label", name: "dank_label", widget: "string" }
+          - { label: "Na inschrijven · titel", name: "dank_titel", widget: "string" }
+          - { label: "Na inschrijven · tekst", name: "dank_tekst", widget: "text" }
+          - { label: "Vragen · titel", name: "q_titel", widget: "string" }
+          - label: "Veelgestelde vragen"
+            name: "faq"
+            widget: "list"
+            summary: "{{fields.vraag}}"
+            add_to_top: false
+            hint: "Sleep om de volgorde te wijzigen"
+            fields:
+              - { label: "Vraag", name: "vraag", widget: "string" }
+              - { label: "Antwoord", name: "antwoord", widget: "text", hint: "Lege regel tussen alinea's. Link: [tekst](adres)" }
+          - { label: "Onderaan · LinkedIn", name: "volg_linkedin", widget: "string" }
+          - { label: "Onderaan · Instagram", name: "volg_instagram", widget: "string" }
+          - { label: "Onderaan · colofon", name: "colofon", widget: "text", hint: "Een nieuwe regel geeft een regeleinde" }
+      - name: "fr"
+        label: "Frans · le-bien.org"
+        file: "cms/fr.json"
+        description: "Alle teksten van le-bien.org. Opslaan zet de wijziging binnen een minuut online."
+        fields:
+          - { label: "Browsertitel", name: "titel", widget: "string", hint: "Titel in het tabblad en in Google" }
+          - { label: "Beschrijving voor Google", name: "beschrijving", widget: "text" }
+          - { label: "Titel bij delen (LinkedIn, WhatsApp)", name: "og_titel", widget: "string" }
+          - { label: "Beschrijving bij delen", name: "og_beschrijving", widget: "text" }
+          - { label: "Knop bovenaan", name: "bestel_top", widget: "string" }
+          - { label: "Grote titel", name: "hoofdtitel", widget: "string" }
+          - { label: "Ondertitel onder de grote titel", name: "ondertitel", widget: "text", hint: "Een nieuwe regel geeft een regeleinde" }
+          - { label: "Samenleving · titel", name: "s_titel", widget: "string" }
+          - { label: "Samenleving · alinea 1", name: "s_p1", widget: "text" }
+          - { label: "Samenleving · alinea 2", name: "s_p2", widget: "text" }
+          - { label: "Samenleving · alinea 3", name: "s_p3", widget: "text" }
+          - { label: "Samenleving · alinea 4", name: "s_p4", widget: "text" }
+          - { label: "Samenleving · oproep", name: "s_oproep", widget: "string" }
+          - { label: "Boek · titel", name: "b_titel", widget: "string" }
+          - { label: "Boek · citaat", name: "b_citaat", widget: "text" }
+          - { label: "Boek · alinea 1", name: "b_p1", widget: "text" }
+          - { label: "Boek · alinea 2", name: "b_p2", widget: "text" }
+          - { label: "Boek · alinea 3", name: "b_p3", widget: "text" }
+          - { label: "Knoppen · knop 1 (bestellen)", name: "knop_bestel", widget: "string", hint: "Staat onder het boek en onder de vereniging" }
+          - { label: "Knoppen · knop 2", name: "knop_2", widget: "string" }
+          - { label: "Knoppen · knop 3", name: "knop_3", widget: "string" }
+          - { label: "Knoppen · noot onder de knoppen", name: "knop_noot", widget: "text" }
+          - { label: "Visie · titel", name: "v_titel", widget: "string" }
+          - { label: "Visie · inleiding", name: "v_intro", widget: "text" }
+          - { label: "Visie · punt 1", name: "v_punt1", widget: "text" }
+          - { label: "Visie · punt 2", name: "v_punt2", widget: "text" }
+          - { label: "Visie · punt 3", name: "v_punt3", widget: "text" }
+          - { label: "Visie · voetnoot", name: "v_voetnoot", widget: "string" }
+          - { label: "Visie · slotalinea", name: "v_slot", widget: "text" }
+          - { label: "Doe je mee · titel", name: "d_titel", widget: "string" }
+          - { label: "Doe je mee · alinea 1", name: "d_p1", widget: "text" }
+          - { label: "Doe je mee · alinea 2", name: "d_p2", widget: "text" }
+          - { label: "Formulier · titel", name: "f_titel", widget: "string" }
+          - { label: "Formulier · inleiding", name: "f_intro", widget: "text" }
+          - { label: "Formulier · veld voornaam", name: "f_voornaam", widget: "string" }
+          - { label: "Formulier · veld achternaam", name: "f_achternaam", widget: "string" }
+          - { label: "Formulier · veld land", name: "f_land", widget: "string" }
+          - { label: "Formulier · veld postcode", name: "f_postcode", widget: "string" }
+          - { label: "Formulier · veld e-mail", name: "f_mail", widget: "string" }
+          - { label: "Formulier · voorbeeld e-mailadres", name: "f_mail_voorbeeld", widget: "string" }
+          - { label: "Formulier · vraag boven de keuzes", name: "f_vraag", widget: "string" }
+          - { label: "Keuze 1 (steun)", name: "keuze_steun", widget: "text" }
+          - { label: "Keuze 2 (op de hoogte blijven)", name: "keuze_volgen", widget: "text" }
+          - { label: "Keuze 3 (meewerken)", name: "keuze_meewerken", widget: "text" }
+          - { label: "Keuze 4 (expertise)", name: "keuze_expertise", widget: "text", hint: "Bij deze keuze verschijnt het veld om de expertise toe te lichten" }
+          - { label: "Formulier · veld expertise", name: "f_expertise", widget: "string" }
+          - { label: "Formulier · veld reden", name: "f_reden", widget: "string" }
+          - { label: "Formulier · toestemming", name: "f_akkoord", widget: "text", hint: "Link: [tekst](adres)" }
+          - { label: "Formulier · knop", name: "f_knop", widget: "string" }
+          - { label: "Na inschrijven · label", name: "dank_label", widget: "string" }
+          - { label: "Na inschrijven · titel", name: "dank_titel", widget: "string" }
+          - { label: "Na inschrijven · tekst", name: "dank_tekst", widget: "text" }
+          - { label: "Vragen · titel", name: "q_titel", widget: "string" }
+          - label: "Veelgestelde vragen"
+            name: "faq"
+            widget: "list"
+            summary: "{{fields.vraag}}"
+            add_to_top: false
+            hint: "Sleep om de volgorde te wijzigen"
+            fields:
+              - { label: "Vraag", name: "vraag", widget: "string" }
+              - { label: "Antwoord", name: "antwoord", widget: "text", hint: "Lege regel tussen alinea's. Link: [tekst](adres)" }
+          - { label: "Onderaan · LinkedIn", name: "volg_linkedin", widget: "string" }
+          - { label: "Onderaan · Instagram", name: "volg_instagram", widget: "string" }
+          - { label: "Onderaan · colofon", name: "colofon", widget: "text", hint: "Een nieuwe regel geeft een regeleinde" }
