@@ -142,3 +142,17 @@ zoals bij untold-legacy.com. De teksten verhuizen dan naar een apart bestand dat
 - Nieuwe omgevingsvariabele in Netlify: `BREVO_EVENT_LIST_ID` (lijst "Lancering 26 november").
 - Velden in Brevo: VOORNAAM, ACHTERNAAM, LAND, POSTCODE, REDEN, AANTAL (getal), LANCERING. Ontbreekt er een, dan maakt de functie ze zelf aan.
 - Domeinen als alias toevoegen in Netlify: le-bien.org, www.le-bien.org, lebien.be, www.lebien.be, the-good.org, www.the-good.org.
+
+
+---
+
+## Teksten beheren (CMS)
+
+- Inloggen: https://hetgoede.org/admin (één gedeelde login via DecapBridge).
+- Opslaan zet de wijziging binnen een minuut online, op hetgoede.org en le-bien.org.
+- Hoe het werkt: de teksten staan in cms/nl.json en cms/fr.json. Bij elke publicatie bouwt Netlify (node cms/build.js) index.html en fr.html uit cms/sjabloon-nl.html en cms/sjabloon-fr.html.
+- Pas index.html en fr.html niet rechtstreeks aan: die worden bij elke publicatie overschreven. Opmaak wijzigen gebeurt in de sjablonen, teksten in het CMS.
+- Opmaak in tekstvelden: een nieuwe regel geeft een regeleinde, een lege regel een nieuwe alinea (in de vragen), een link schrijf je als [tekst](adres).
+- Blijft een verplicht veld leeg, dan stopt de publicatie en blijft de vorige versie online.
+- Terugzetten: elke wijziging staat in de geschiedenis van de repository op GitHub.
+- DecapBridge: de site-ID staat in admin/config.yml (identity_url).

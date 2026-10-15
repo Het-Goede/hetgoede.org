@@ -1,6 +1,15 @@
 [build]
   publish = "."
   functions = "."
+  # Bouwt index.html en fr.html uit cms/ (teksten uit het CMS op /admin)
+  command = "node cms/build.js"
+
+# Sjablonen en tekstbestanden niet publiek tonen
+[[redirects]]
+  from = "/cms/*"
+  to = "/"
+  status = 301
+  force = true
 
 # Extra domeinen
 # hetgoede.be -> hetgoede.org
