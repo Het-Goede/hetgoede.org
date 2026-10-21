@@ -93,3 +93,33 @@
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
 })();
+
+
+/* Herkomst van de bezoeker.
+   Onthoudt de labels uit de advertentielinks (utm_source, utm_medium, utm_campaign, utm_content) en "bron"
+   zolang de bezoeker op de site blijft. Zo weet Brevo (veld BRON) bij een inschrijving waar iemand vandaan kwam,
+   en krijgt de bestelknop naar Shopify dezelfde labels mee, zodat Shopify de bestelling aan de advertentie koppelt. */
+(function () {
+  var SLEUTEL = "hg_herkomst";
+  var LABELS = ["utm_source", "utm_medium", "utm_campaign", "utm_content"];
+  var q = new URLSearchParams(location.search);
+  var h = {};
+  try { h = JSON.parse(sessionStorage.getItem(SLEUTEL) || "{}"); } catch (e) {}
+  LABELS.concat(["bron"]).forEach(function (k) { var w = q.get(k); if (w) h[k] = w.slice(0, 60); });
+  if (!h.bron && h.utm_source) h.bron = (h.utm_source + (h.utm_content ? "-" + h.utm_content : "")).slice(0, 40);
+  try { sessionStorage.setItem(SLEUTEL, JSON.stringify(h)); } catch (e) {}
+
+  /* Inschrijvingen: zet de bron als de link zelf er geen meegaf. */
+  if (h.bron && !q.get("bron") && typeof window.BRON !== "undefined") window.BRON = h.bron.slice(0, 40);
+
+  /* Bestellingen: geef de labels mee aan elke link naar de webshop. */
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href*="shop.untold-publishing.com"]') : null;
+    if (!a) return;
+    try {
+      var u = new URL(a.href);
+      LABELS.forEach(function (k) { if (h[k] && !u.searchParams.get(k)) u.searchParams.set(k, h[k]); });
+      a.href = u.toString();
+    } catch (err) {}
+  }, true);
+})();
