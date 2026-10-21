@@ -6,6 +6,7 @@
 //   BREVO_EVENT_LIST_ID    lijst "Lancering 26 november"
 //   BREVO_DOI_TEMPLATE_NL  Nederlandstalige bevestigingsmail (1)
 //   BREVO_DOI_TEMPLATE_FR  Franstalige bevestigingsmail (2)
+//   BREVO_DOI_TEMPLATE_EVENT bevestigingsmail voor de lancering (3, ook de standaard)
 //   SITE_URL               https://hetgoede.org
 
 const DOELEN = {
@@ -86,7 +87,7 @@ exports.handler = async (event) => {
   const payload = {
     email,
     includeListIds: lijsten.filter((n) => n > 0),
-    templateId: Number(fr ? env.BREVO_DOI_TEMPLATE_FR : env.BREVO_DOI_TEMPLATE_NL),
+    templateId: Number(lancering ? (env.BREVO_DOI_TEMPLATE_EVENT || 3) : fr ? env.BREVO_DOI_TEMPLATE_FR : env.BREVO_DOI_TEMPLATE_NL),
     redirectionUrl: `${site}/bevestigd?taal=${taal}${lancering ? "&soort=lancering" : ""}`,
     attributes,
   };
