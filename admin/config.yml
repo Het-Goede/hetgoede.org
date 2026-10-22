@@ -1,10 +1,10 @@
 # Teksten beheren voor hetgoede.org en le-bien.org
-# Aanmelden via DecapBridge. Vul de site-ID in na het aanmaken van de site op decapbridge.com.
+# Aanmelden via DecapBridge (site Het goede, aangemaakt op 22 oktober 2026).
 backend:
   name: git-gateway
   repo: Het-Goede/hetgoede.org
   branch: main
-  identity_url: https://auth.decapbridge.com/sites/DECAPBRIDGE_SITE_ID
+  identity_url: https://auth.decapbridge.com/sites/eed98c32-b51e-4bc2-bd94-6a1beb2d903e
   gateway_url: https://gateway.decapbridge.com
   commit_messages:
     update: Tekst aangepast via CMS - {{author-name}}
