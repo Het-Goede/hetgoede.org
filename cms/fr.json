@@ -48,9 +48,9 @@
   "f_reden": "Quelle est la principale raison de votre inscription ?",
   "f_akkoord": "J’accepte que mes données soient utilisées pour me tenir au courant du bien et de l’association en création, et qu’elles lui soient transmises dès qu’elle existera. Plus d’infos dans la [déclaration de confidentialité](/fr/confidentialite).",
   "f_knop": "Je m’inscris",
-  "dank_label": "C’est fait",
-  "dank_titel": "Vous êtes sur la liste",
-  "dank_tekst": "Nous venons de vous envoyer un e-mail. Cliquez sur le lien qu’il contient pour confirmer votre inscription. Rien reçu ? Jetez un œil dans vos spams.",
+  "dank_label": "Plus qu’un clic",
+  "dank_titel": "C’est presque fait",
+  "dank_tekst": "Nous venons de vous envoyer un e-mail. Votre inscription n’est confirmée qu’après avoir cliqué sur le lien qu’il contient. Rien reçu ? Jetez un œil dans vos spams.",
   "q_titel": "Questions fréquentes",
   "faq": [
     {
