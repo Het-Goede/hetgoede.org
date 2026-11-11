@@ -19,7 +19,7 @@
   "b_p3": "Dit boek heeft niet alle antwoorden. Het is wel een aanzet. Een holistisch startpunt om te vertrekken, op weg naar een visie.",
   "knop_bestel": "Bestel je boek",
   "knop_2": "Schrijf je in voor de voorstelling van 26 november",
-  "knop_3": "Schrijf je in bij de vereniging",
+  "knop_3": "Word deel van de beweging",
   "knop_noot": "Early bird: 18 euro tot en met 26 november, verzending inbegrepen. De voorstelling is gratis.",
   "v_titel": "Een visie voor de komende eeuw",
   "v_intro": "In de komende honderd jaar moet het mogelijk zijn om vanuit het goede te komen tot:",
@@ -29,9 +29,9 @@
   "v_voetnoot": "* Zie de zeven elementen van geluk in het boek.",
   "v_slot": "Daarvoor stellen we best onze definitie van succes in vraag. We herdenken begrippen zoals geld, bezit, eigenaarschap, welvaart, groei, … We hechten in woord en daad meer belang aan een veerkrachtige bevolking, zorg, interdependentie, introspectie, nieuwsgierigheid, reflectie, humor, liefde en rechtvaardigheid dan aan materiële vooruitgang.",
   "d_titel": "Doe je mee?",
-  "d_p1": "Het verhaal stopt niet bij de laatste bladzijde. Integendeel. Het is de start van een vereniging die constructief en pragmatisch te werk gaat in hoe we stappen kunnen zetten in de richting van de visie. Samen en in dialoog. Vanuit onze verschillen en gelijkwaardigheid. Vanuit een echte democratie.",
+  "d_p1": "Het verhaal stopt niet bij de laatste bladzijde. Integendeel. Het is de start van een beweging die constructief en pragmatisch te werk gaat in hoe we stappen kunnen zetten in de richting van de visie. Samen en in dialoog. Vanuit onze verschillen en gelijkwaardigheid. Vanuit een echte democratie.",
   "d_p2": "Ze begint klein, maar denkt groot. Door krachten te bundelen wil ze uitgroeien tot een beweging die mee richting geeft aan de wereld.",
-  "f_titel": "De vereniging komt er",
+  "f_titel": "De beweging begint",
   "f_intro": "Wil je meedoen, of eerst op de hoogte blijven? Schrijf je hier in.",
   "f_voornaam": "Voornaam",
   "f_achternaam": "Achternaam",
@@ -46,7 +46,7 @@
   "keuze_expertise": "Ik kan en wil expertise inzetten die de groei ten goede zal komen.",
   "f_expertise": "Licht je expertise kort toe",
   "f_reden": "Wat is je belangrijkste reden om je in te schrijven?",
-  "f_akkoord": "Ik geef toestemming om mijn gegevens te gebruiken om mij op de hoogte te houden van het goede en de op te richten vereniging, en om ze aan die vereniging over te dragen zodra ze bestaat. Meer in de [privacyverklaring](/privacy).",
+  "f_akkoord": "Ik geef toestemming om mijn gegevens te gebruiken om mij op de hoogte te houden van het goede en de beweging, en om ze over te dragen aan de organisatie die de beweging zal dragen, zodra die bestaat. Meer in de [privacyverklaring](/privacy).",
   "f_knop": "Schrijf mij in",
   "dank_label": "Nog één klik",
   "dank_titel": "Bijna rond",
@@ -59,11 +59,11 @@
     },
     {
       "vraag": "Is het goede een politieke partij?",
-      "antwoord": "Nee. Het goede is vandaag geen politieke partij, maar een vereniging in opbouw.\n\nDe vereniging wil mensen samenbrengen die willen nadenken en samenwerken rond de ideologie van het goede, via dialoog en democratische besluitvorming.\n\nHet boek sluit wel niet uit dat de vereniging op langere termijn ook politiek actief wordt. Dat zou pas gebeuren wanneer de leden daar democratisch voor kiezen en wanneer de vereniging voldoende ontwikkeld is. Politieke macht wordt daarbij niet als doel gezien, maar als mogelijk middel om maatschappelijke verandering te realiseren."
+      "antwoord": "Nee. Het goede is vandaag geen politieke partij, maar een beweging in opbouw.\n\nDe beweging wil mensen samenbrengen die willen nadenken en samenwerken rond de ideologie van het goede, via dialoog en democratische besluitvorming.\n\nHet boek sluit wel niet uit dat de beweging op langere termijn ook politiek actief wordt. Dat zou pas gebeuren wanneer de deelnemers daar democratisch voor kiezen en wanneer de beweging voldoende ontwikkeld is. Politieke macht wordt daarbij niet als doel gezien, maar als mogelijk middel om maatschappelijke verandering te realiseren."
     },
     {
       "vraag": "Moet ik akkoord gaan met alles in het boek?",
-      "antwoord": "Nee. Integendeel.\n\nHet boek wil geen waarheid opleggen. Veel ideeën worden bewust als voorstellen en denkpistes naar voren geschoven. De bedoeling is dat je zelf nadenkt: waar herken je je in, waar twijfel je aan en wat zou jij anders doen?\n\nOok binnen de vereniging hoeft niet iedereen over alles dezelfde mening te hebben. Het uitgangspunt is juist dat verschillende inzichten via dialoog en democratische besluitvorming tot betere voorstellen kunnen leiden.\n\nJe hoeft het dus niet eens te zijn met elk idee om mee te denken of mee te bouwen."
+      "antwoord": "Nee. Integendeel.\n\nHet boek wil geen waarheid opleggen. Veel ideeën worden bewust als voorstellen en denkpistes naar voren geschoven. De bedoeling is dat je zelf nadenkt: waar herken je je in, waar twijfel je aan en wat zou jij anders doen?\n\nOok binnen de beweging hoeft niet iedereen over alles dezelfde mening te hebben. Het uitgangspunt is juist dat verschillende inzichten via dialoog en democratische besluitvorming tot betere voorstellen kunnen leiden.\n\nJe hoeft het dus niet eens te zijn met elk idee om mee te denken of mee te bouwen."
     },
     {
       "vraag": "Is het boek wetenschappelijk?",
@@ -78,12 +78,12 @@
       "antwoord": "Dan wordt het boek voorgesteld in Lochristi, met de auteurs, een panel en een receptie. Deuren open om 17 uur, start om 17.30 uur. [Schrijf je hier in voor de lancering](/26november)."
     },
     {
-      "vraag": "Hoe werkt de vereniging?",
-      "antwoord": "De vereniging staat nog aan het begin en moet nog opgestart worden. Het boek geeft de richting, maar niet alles ligt al vast.\n\nDe bedoeling is mensen samen te brengen die willen onderzoeken hoe de ideologie van het goede verder kan worden ontwikkeld en toegepast. De werking vertrekt vanuit echte democratie: luisteren naar verschillende inzichten, dialoog voeren, samen kennis opbouwen en zo tot haalbare beslissingen komen.\n\nJe kunt zelf kiezen hoe ver je wilt gaan: gewoon op de hoogte blijven, deelnemen aan gesprekken en bijeenkomsten, actief meehelpen aan de opbouw van de vereniging.\n\nOp langere termijn kan de vereniging ook maatschappelijke en politieke voorstellen ontwikkelen. Maar de bedoeling is niet om zo snel mogelijk macht te verwerven. Eerst moet er een sterke, democratische beweging ontstaan die haar ideeën en werking samen met haar leden ontwikkelt."
+      "vraag": "Hoe werkt de beweging?",
+      "antwoord": "De beweging staat nog aan het begin en moet nog op gang komen. Het boek geeft de richting, maar niet alles ligt al vast.\n\nDe bedoeling is mensen samen te brengen die willen onderzoeken hoe de ideologie van het goede verder kan worden ontwikkeld en toegepast. De werking vertrekt vanuit echte democratie: luisteren naar verschillende inzichten, dialoog voeren, samen kennis opbouwen en zo tot haalbare beslissingen komen.\n\nJe kunt zelf kiezen hoe ver je wilt gaan: gewoon op de hoogte blijven, deelnemen aan gesprekken en bijeenkomsten, actief meehelpen aan de opbouw van de beweging.\n\nOp langere termijn kan de beweging ook maatschappelijke en politieke voorstellen ontwikkelen. Maar de bedoeling is niet om zo snel mogelijk macht te verwerven. Eerst moet er een sterke, democratische beweging ontstaan die haar ideeën en werking samen met wie meedoet ontwikkelt."
     },
     {
       "vraag": "Wat doen jullie met mijn gegevens?",
-      "antwoord": "We gebruiken ze om je op de hoogte te houden van het goede en de vereniging. Uitschrijven kan altijd, onderaan elke mail. Meer in de [privacyverklaring](/privacy)."
+      "antwoord": "We gebruiken ze om je op de hoogte te houden van het goede en de beweging. Uitschrijven kan altijd, onderaan elke mail. Meer in de [privacyverklaring](/privacy)."
     }
   ],
   "volg_linkedin": "Volg het goede op LinkedIn",
