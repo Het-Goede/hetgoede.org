@@ -23,7 +23,7 @@
 </head>
 <body><div class="wrap">
 <h1 id="kop">Je inschrijving is bevestigd</h1>
-<p id="tekst">Dank je. We houden je op de hoogte van het goede, en je hoort het als eerste wanneer de vereniging vorm krijgt.</p>
+<p id="tekst">Dank je. We houden je op de hoogte van het goede, en je hoort het als eerste wanneer de beweging vorm krijgt.</p>
 <a class="terug" id="terug" href="/">Terug naar het goede</a>
 <script>
 var q = new URLSearchParams(location.search), fr = q.get('taal') === 'fr', lanc = q.get('soort') === 'lancering';
@@ -36,7 +36,7 @@ if (lanc) {
   document.documentElement.lang = 'fr';
   document.title = 'Confirmé — Le Bien';
   document.getElementById('kop').textContent = 'Votre inscription est confirmée';
-  document.getElementById('tekst').textContent = 'Merci. Nous vous tiendrons au courant du Bien, et vous serez parmi les premiers informés lorsque l’association prendra forme.';
+  document.getElementById('tekst').textContent = 'Merci. Nous vous tiendrons au courant du Bien, et vous serez parmi les premiers informés lorsque le mouvement prendra forme.';
   document.getElementById('terug').href = '/fr/';
   document.getElementById('terug').textContent = 'Retour au Bien';
 }
