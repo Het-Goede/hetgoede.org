@@ -111,10 +111,18 @@
   to = "/confidentialite.html"
   status = 200
 
+# De voorstelling is voorbij: de pagina stuurt door naar de terugblik
 [[redirects]]
   from = "/26november"
-  to = "/26november.html"
-  status = 200
+  to = "/#terugblik"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/26november.html"
+  to = "/#terugblik"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/privacy"
