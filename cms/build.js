@@ -1,4 +1,4 @@
-// Bouwt index.html en fr.html uit cms/ (sjablonen en teksten) (beheerd via het CMS op /admin).
+// Bouwt index.html, fr.html en en.html uit cms/ (sjablonen en teksten) (beheerd via het CMS op /admin).
 // Draait automatisch bij elke publicatie op Netlify. Bewerk de teksten in het CMS, niet in index.html of fr.html.
 const fs = require('fs');
 const path = require('path');
@@ -31,3 +31,4 @@ function bouw(template, content, uit) {
 
 bouw('sjabloon-nl.html', 'nl.json', 'index.html');
 bouw('sjabloon-fr.html', 'fr.json', 'fr.html');
+bouw('sjabloon-en.html', 'en.json', 'en.html');
