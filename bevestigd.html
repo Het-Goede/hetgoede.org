@@ -26,12 +26,19 @@
 <p id="tekst">Dank je. We houden je op de hoogte van het goede, en je hoort het als eerste wanneer de beweging vorm krijgt.</p>
 <a class="terug" id="terug" href="/">Terug naar het goede</a>
 <script>
-var q = new URLSearchParams(location.search), fr = q.get('taal') === 'fr', lanc = q.get('soort') === 'lancering';
+var q = new URLSearchParams(location.search), fr = q.get('taal') === 'fr', en = q.get('taal') === 'en', lanc = q.get('soort') === 'lancering';
 if (lanc) {
   document.getElementById('kop').textContent = 'Tot 26 november';
   document.getElementById('tekst').textContent = 'Je inschrijving voor de lancering is bevestigd. De dag voordien sturen we je een herinnering.';
   document.getElementById('terug').href = '/26november';
   document.getElementById('terug').textContent = 'Terug naar de lancering';
+} else if (en) {
+  document.documentElement.lang = 'en';
+  document.title = 'Confirmed — The good';
+  document.getElementById('kop').textContent = 'Your sign-up is confirmed';
+  document.getElementById('tekst').textContent = 'Thank you. We will keep you informed about the good, and you will be among the first to hear when the movement takes shape.';
+  document.getElementById('terug').href = 'https://the-good.org/';
+  document.getElementById('terug').textContent = 'Back to the good';
 } else if (fr) {
   document.documentElement.lang = 'fr';
   document.title = 'Confirmé — Le Bien';

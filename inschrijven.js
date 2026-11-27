@@ -6,8 +6,11 @@
 //   BREVO_EVENT_LIST_ID    lijst "Lancering 26 november"
 //   BREVO_DOI_TEMPLATE_NL  Nederlandstalige bevestigingsmail (1)
 //   BREVO_DOI_TEMPLATE_FR  Franstalige bevestigingsmail (2)
+//   BREVO_DOI_TEMPLATE_EN  Engelstalige bevestigingsmail (standaard sjabloon EN_TEMPLATE hieronder)
 //   BREVO_DOI_TEMPLATE_EVENT bevestigingsmail voor de lancering (3, ook de standaard)
 //   SITE_URL               https://hetgoede.org
+
+const EN_TEMPLATE = 8; // Engelstalige bevestigingsmail in Brevo (sjabloon 8)
 
 const DOELEN = {
   steun: "Steun tonen",
@@ -45,15 +48,17 @@ exports.handler = async (event) => {
   try { d = JSON.parse(event.body || "{}"); } catch { return antwoord(400, { fout: "Ongeldige aanvraag." }); }
   if (d.website) return antwoord(200, { ok: true }); // spamval
 
-  const taal = d.taal === "fr" ? "fr" : "nl";
+  const taal = d.taal === "fr" ? "fr" : d.taal === "en" ? "en" : "nl";
   const fr = taal === "fr";
+  const en = taal === "en";
+  const t = (nl, f, e) => (en ? e : fr ? f : nl);
   const email = String(d.email || "").trim().toLowerCase();
   const voornaam = kort(d.voornaam, 80);
   const achternaam = kort(d.achternaam, 80);
   const naam = kort(d.naam, 160) || [voornaam, achternaam].filter(Boolean).join(" ");
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return antwoord(400, { fout: fr ? "Cette adresse e-mail n’est pas valide." : "Dat e-mailadres klopt niet." });
-  if (!naam) return antwoord(400, { fout: fr ? "Indiquez votre nom." : "Vul je naam in." });
-  if (d.akkoord !== true) return antwoord(400, { fout: fr ? "Cochez la case du consentement." : "Vink de toestemming aan." });
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return antwoord(400, { fout: t("Dat e-mailadres klopt niet.", "Cette adresse e-mail n’est pas valide.", "That email address is not valid.") });
+  if (!naam) return antwoord(400, { fout: t("Vul je naam in.", "Indiquez votre nom.", "Please fill in your name.") });
+  if (d.akkoord !== true) return antwoord(400, { fout: t("Vink de toestemming aan.", "Cochez la case du consentement.", "Please tick the consent box.") });
 
   const env = process.env;
   const site = (env.SITE_URL || "https://hetgoede.org").replace(/\/$/, "");
@@ -87,11 +92,11 @@ exports.handler = async (event) => {
   const payload = {
     email,
     includeListIds: lijsten.filter((n) => n > 0),
-    templateId: Number(lancering ? (env.BREVO_DOI_TEMPLATE_EVENT || 3) : fr ? env.BREVO_DOI_TEMPLATE_FR : env.BREVO_DOI_TEMPLATE_NL),
+    templateId: Number(lancering ? (env.BREVO_DOI_TEMPLATE_EVENT || 3) : en ? (env.BREVO_DOI_TEMPLATE_EN || EN_TEMPLATE) : fr ? env.BREVO_DOI_TEMPLATE_FR : env.BREVO_DOI_TEMPLATE_NL),
     redirectionUrl: `${site}/bevestigd?taal=${taal}${lancering ? "&soort=lancering" : ""}`,
     attributes,
   };
-  const fout = fr ? "L’inscription n’a pas abouti." : "De inschrijving lukte niet.";
+  const fout = t("De inschrijving lukte niet.", "L’inscription n’a pas abouti.", "The sign-up did not go through.");
 
   try {
     for (let poging = 0; poging < 2; poging++) {

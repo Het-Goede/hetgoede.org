@@ -5,7 +5,11 @@
   var PIXEL_ID = "4505457693001693";
   var SLEUTEL = "hg_cookies";
   var fr = document.documentElement.lang === "fr";
-  var T = fr
+  var en = document.documentElement.lang === "en";
+  var T = en
+    ? { tekst: "This website uses cookies. Is that okay with you?",
+        ja: "Accept", nee: "No thanks", meer: "More info", privacy: "/privacy", link: "Cookies" }
+    : fr
     ? { tekst: "Ce site utilise des cookies. Vous êtes d’accord ?",
         ja: "D’accord", nee: "Non merci", meer: "En savoir plus", privacy: "/fr/confidentialite", link: "Cookies" }
     : { tekst: "Deze website gebruikt cookies. Ben je akkoord?",
@@ -74,7 +78,7 @@
         if (!gemeld && dank.style.display === "block") {
           gemeld = true;
           if (lancering) window.hgMeta("CompleteRegistration", { content_name: "Lancering 26 november" });
-          else window.hgMeta("Lead", { content_name: fr ? "Inscription Le Bien" : "Inschrijving Het Goede" });
+          else window.hgMeta("Lead", { content_name: en ? "Sign-up The Good" : fr ? "Inscription Le Bien" : "Inschrijving Het Goede" });
         }
       }).observe(dank, { attributes: true, attributeFilter: ["style"] });
     }

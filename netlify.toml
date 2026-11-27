@@ -56,17 +56,23 @@
   status = 200
   force = true
 
-# the-good.org stuurt voorlopig door naar hetgoede.org
+# the-good.org toont de Engelse pagina; www stuurt door
 [[redirects]]
-  from = "https://the-good.org/*"
-  to = "https://hetgoede.org/"
+  from = "https://www.the-good.org/*"
+  to = "https://the-good.org/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://www.the-good.org/*"
-  to = "https://hetgoede.org/"
-  status = 301
+  from = "https://the-good.org/"
+  to = "/en.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "https://the-good.org/privacy"
+  to = "/privacy-en.html"
+  status = 200
   force = true
 
 # Interne bestanden niet publiek tonen
@@ -96,6 +102,11 @@
   status = 302
 
 # Pagina's
+[[redirects]]
+  from = "/en"
+  to = "/en.html"
+  status = 200
+
 [[redirects]]
   from = "/fr"
   to = "/fr.html"

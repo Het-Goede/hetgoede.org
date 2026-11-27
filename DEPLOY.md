@@ -52,6 +52,7 @@ Niets hiervan is geheim. De API-sleutel staat enkel in Netlify (als geheim) en i
 | Brevo-lijst | Het Goede — inschrijvingen, nummer 3 |
 | Bevestigingsmail NL | sjabloon 1 |
 | Bevestigingsmail FR | sjabloon 2 |
+| Bevestigingsmail EN | sjabloon 8 (the-good.org) |
 
 DNS bij Combell voor hetgoede.org:
 
