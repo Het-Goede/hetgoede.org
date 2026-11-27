@@ -206,6 +206,12 @@
   .kies{display:flex;flex-direction:column;gap:12px;max-width:440px;margin:36px auto 0}
   .kies .btn{width:100%;text-align:center;margin:0}
   .kies .btn-plain{border:1.5px solid var(--groen);color:var(--groen);padding:16px 22px}
+  .fotos{max-width:980px;margin:34px auto 30px;padding:0 26px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;position:relative;z-index:2}
+  .fotos img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+  @media (max-width:640px){.fotos{grid-template-columns:repeat(2,1fr);gap:6px;padding:0 16px}}
+  .makers{max-width:360px;margin:36px auto 4px}
+  .makers img{display:block;width:100%;height:auto}
+  .makers figcaption{font-size:14px;color:var(--taupe);margin-top:12px}
   .kies-noot{font-size:14px;color:var(--taupe);margin-top:14px}
   .voetnoot{font-size:14px;color:var(--taupe);margin-top:10px}
   .voetnoot a{color:var(--groen)}
@@ -259,12 +265,31 @@
     <p>{{b_p1}}</p>
     <p>{{b_p2}}</p>
     <p>{{b_p3}}</p>
+    <figure class="makers"><img src="/makers.webp" alt="{{a:b_makers}}" loading="lazy" width="896" height="1344"><figcaption>{{b_makers}}</figcaption></figure>
     <div class="kies" id="kies">
       <a class="btn btn-primary" href="https://shop.untold-publishing.com/products/le-bien" target="_blank" rel="noopener">{{knop_bestel}}</a>
-      <a class="btn btn-plain" href="https://hetgoede.org/26november" lang="nl">{{knop_2}}</a>
       <a class="btn btn-plain" href="#meedoen">{{knop_3}}</a>
     </div>
     <p class="kies-noot">{{knop_noot}}</p>
+  </div>
+</section>
+
+<section id="terugblik">
+  <div class="wrap reveal">
+    <h2>{{t_titel}}</h2>
+    <p>{{t_p1}}</p>
+    <p>{{t_p2}}</p>
+  </div>
+  <div class="fotos reveal">
+    <img src="/terugblik-1773.webp" alt="La salle comble chez Floreac" loading="lazy" width="1200" height="800">
+    <img src="/terugblik-1785.webp" alt="Ilse Gysel ouvre la soirée" loading="lazy" width="1200" height="800">
+    <img src="/terugblik-1838.webp" alt="Un discours devant la salle comble" loading="lazy" width="1200" height="800">
+    <img src="/terugblik-1870.webp" alt="Le panel" loading="lazy" width="1200" height="800">
+    <img src="/terugblik-1853.webp" alt="Le public vote avec des cartons de couleur" loading="lazy" width="1200" height="800">
+    <img src="/terugblik-1748.webp" alt="Les livres prêts pour la table de vente" loading="lazy" width="1200" height="800">
+  </div>
+  <div class="wrap reveal">
+    <p>{{t_p3}}</p>
   </div>
 </section>
 
@@ -287,10 +312,14 @@
   <div class="wrap reveal">
     <h2>{{d_titel}}</h2>
     <p>{{d_p1}}</p>
+    <ul class="visie">
+      <li>{{d_vraag1}}</li>
+      <li>{{d_vraag2}}</li>
+    </ul>
     <p>{{d_p2}}</p>
+    <p class="oproep">{{d_slot}}</p>
     <div class="kies">
       <a class="btn btn-primary" href="https://shop.untold-publishing.com/products/le-bien" target="_blank" rel="noopener">{{knop_bestel}}</a>
-      <a class="btn btn-plain" href="https://hetgoede.org/26november" lang="nl">{{knop_2}}</a>
       <a class="btn btn-plain" href="#meedoen">{{knop_3}}</a>
     </div>
     <p class="kies-noot">{{knop_noot}}</p>

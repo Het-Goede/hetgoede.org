@@ -17,10 +17,10 @@
   "b_p1": "Une vie d’entrepreneur, de vie en commun et de doutes a mené Etienne à une conviction. Le bien est en chacun de nous.",
   "b_p2": "Il part du big bang et termine avec une fillette de douze ans qui demande s’il y a toujours de l’espoir. Entre les deux, les grandes questions de l’existence humaine.",
   "b_p3": "Ce livre n’a pas toutes les réponses. Il est une impulsion. Un point de départ global, en route vers une vision.",
+  "b_makers": "Etienne, Geert Degrande et Wim Floré",
   "knop_bestel": "Commander le livre",
-  "knop_2": "Présentation du 26 novembre (en néerlandais)",
   "knop_3": "Je rejoins le mouvement",
-  "knop_noot": "Prix de lancement : 18 euros jusqu’au 26 novembre inclus, livraison comprise. Ensuite 24,99 euros.",
+  "knop_noot": "24,99 euros. Livraison gratuite en Belgique, aux Pays-Bas et en France.",
   "v_titel": "Une vision pour le siècle à venir",
   "v_intro": "Au cours des cent prochaines années, il doit être possible, à partir du bien, d’arriver à :",
   "v_punt1": "une vie harmonieuse et en paix entre tous les peuples et tous les êtres vivants",
@@ -29,8 +29,8 @@
   "v_voetnoot": "* Voir les sept éléments du bonheur dans le livre.",
   "v_slot": "Pour cela, mieux vaut remettre en question notre définition du succès. Nous repensons des notions comme l’argent, la possession, la propriété, la prospérité, la croissance, … En paroles et en actes, nous accordons plus d’importance à une population résiliente, au soin, à l’interdépendance, à l’introspection, à la curiosité, à la réflexion, à l’humour, à l’amour et à la justice qu’au progrès matériel.",
   "d_titel": "Vous en êtes ?",
-  "d_p1": "L’histoire ne s’arrête pas à la dernière page. Au contraire. C’est le début d’un mouvement qui avance de manière constructive et pragmatique vers cette vision. Ensemble et dans le dialogue. À partir de nos différences et de notre égalité. À partir d’une véritable démocratie.",
-  "d_p2": "Elle commence petite, mais voit grand. En unissant les forces, elle veut devenir un mouvement qui contribue à orienter le monde.",
+  "d_p1": "L’histoire ne s’arrête pas à la dernière page. Au contraire. C’est le début d’un mouvement qui avance de manière constructive et pragmatique vers cette vision. Ensemble et dans le dialogue. À partir de nos différences et de notre égalité. À partir d’une véritable démocratie. Il cherche des réponses aux questions suivantes :",
+  "d_p2": "Il commence petit, mais voit grand. En unissant les forces, il veut devenir un mouvement qui contribue à orienter le monde.",
   "f_titel": "Le mouvement commence",
   "f_intro": "Envie de participer, ou d’abord de rester au courant ? Inscrivez-vous ici.",
   "f_voornaam": "Prénom",
@@ -74,8 +74,8 @@
       "antwoord": "Vouloir réaliser le bien n’est pas naïf s’il est porté par beaucoup de personnes. Il est toutefois nécessaire d’unir les forces de toutes les personnes et organisations qui pensent et agissent aujourd’hui à partir du bien, pour atteindre la vision.\n\nBeaucoup veulent un changement de système, mais une petite organisation ne peut rien contre la force du capitalisme. Coopérer à grande échelle est la principale force pour remplacer pacifiquement, à l’échelle mondiale, l’idéologie du capitalisme par l’idéologie du bien.\n\nGrâce aux évolutions technologiques, coopérer à grande échelle est plus accessible que jamais."
     },
     {
-      "vraag": "Que se passe-t-il le 26 novembre ?",
-      "antwoord": "L’édition néerlandaise, Het goede, est présentée à Lochristi, avec les auteurs, un panel et une réception. Portes à 17 h, début à 17 h 30. La présentation se déroule en néerlandais. [Inscription à la présentation](https://hetgoede.org/26november)."
+      "vraag": "Où acheter le livre ?",
+      "antwoord": "Dans la [boutique en ligne d’Untold](https://shop.untold-publishing.com/products/le-bien), au prix de 24,99 euros. La livraison est gratuite en Belgique, aux Pays-Bas et en France."
     },
     {
       "vraag": "Comment fonctionne le mouvement ?",
@@ -88,5 +88,12 @@
   ],
   "volg_linkedin": "Suivez Het goede sur LinkedIn",
   "volg_instagram": "Suivez Untold sur Instagram",
-  "colofon": "Le bien est une publication d’Untold: Books That Matter\nuntold-books.com"
+  "colofon": "Le bien est une publication d’Untold: Books That Matter\nuntold-books.com",
+  "d_vraag1": "Et si une planète vivable et une prospérité digne pour tous les êtres humains devenaient l’objectif mondial ?",
+  "d_vraag2": "Et si les règles de notre gouvernance mondiale ne prenaient pas forme d’en haut, mais précisément d’en bas ?",
+  "d_slot": "Réinventons ensemble la démocratie et les règles du jeu de notre société.",
+  "t_titel": "Retour sur le 26 novembre",
+  "t_p1": "Le 26 novembre, nous avons présenté l’édition néerlandaise, Het goede, chez Floreac à Lochristi. Avec 325 personnes dans la salle, ce fut une soirée chaleureuse et inspirante.",
+  "t_p2": "Wim Demessemaekers d’Untold, Etienne, Geert Degrande et Wim Floré ont pris la parole. Charlotte De Mey, Dimitri Barbe, Mieke De Vylder et Peter Depauw ont ensuite échangé lors d’un panel animé par Ilse Gysel.",
+  "t_p3": "Merci à toutes celles et ceux qui étaient présents et qui ont contribué à cette soirée."
 }

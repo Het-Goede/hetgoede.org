@@ -1,8 +1,8 @@
 {
   "titel": "Het goede — een nieuw verhaal voor mens, planeet en toekomstige generaties",
-  "beschrijving": "Een nieuw verhaal voor mens, planeet en toekomstige generaties. Het boek van Etienne Floré verschijnt op 26 november 2026.",
+  "beschrijving": "Een nieuw verhaal voor mens, planeet en toekomstige generaties. Het boek van Etienne Floré, uitgegeven door Untold.",
   "og_titel": "Het goede",
-  "og_beschrijving": "Een nieuw verhaal voor mens, planeet en toekomstige generaties. Verschijnt op 26 november 2026.",
+  "og_beschrijving": "Een nieuw verhaal voor mens, planeet en toekomstige generaties.",
   "bestel_top": "Bestel het boek",
   "hoofdtitel": "Het goede",
   "ondertitel": "Een nieuw verhaal voor mens, planeet\nen toekomstige generaties.",
@@ -17,10 +17,10 @@
   "b_p1": "Een leven lang ondernemen, samenleven en twijfelen bracht Etienne bij één overtuiging. Het goede zit in ieder van ons.",
   "b_p2": "Hij begint bij de oerknal en eindigt bij een meisje van twaalf dat vraagt of er altijd hoop is. Daartussen liggen de grote vragen van het menszijn.",
   "b_p3": "Dit boek heeft niet alle antwoorden. Het is wel een aanzet. Een holistisch startpunt om te vertrekken, op weg naar een visie.",
+  "b_makers": "Etienne, Geert Degrande en Wim Floré",
   "knop_bestel": "Bestel je boek",
-  "knop_2": "Schrijf je in voor de voorstelling van 26 november",
   "knop_3": "Word deel van de beweging",
-  "knop_noot": "Early bird: 18 euro tot en met 26 november, verzending inbegrepen. De voorstelling is gratis.",
+  "knop_noot": "24,99 euro. Gratis verzending in België, Nederland en Frankrijk.",
   "v_titel": "Een visie voor de komende eeuw",
   "v_intro": "In de komende honderd jaar moet het mogelijk zijn om vanuit het goede te komen tot:",
   "v_punt1": "harmonieus en in vrede samenleven van alle bevolkingen en alle levende wezens",
@@ -29,7 +29,7 @@
   "v_voetnoot": "* Zie de zeven elementen van geluk in het boek.",
   "v_slot": "Daarvoor stellen we best onze definitie van succes in vraag. We herdenken begrippen zoals geld, bezit, eigenaarschap, welvaart, groei, … We hechten in woord en daad meer belang aan een veerkrachtige bevolking, zorg, interdependentie, introspectie, nieuwsgierigheid, reflectie, humor, liefde en rechtvaardigheid dan aan materiële vooruitgang.",
   "d_titel": "Doe je mee?",
-  "d_p1": "Het verhaal stopt niet bij de laatste bladzijde. Integendeel. Het is de start van een beweging die constructief en pragmatisch te werk gaat in hoe we stappen kunnen zetten in de richting van de visie. Samen en in dialoog. Vanuit onze verschillen en gelijkwaardigheid. Vanuit een echte democratie.",
+  "d_p1": "Het verhaal stopt niet bij de laatste bladzijde. Integendeel. Het is de start van een beweging die constructief en pragmatisch te werk gaat in hoe we stappen kunnen zetten in de richting van de visie. Samen en in dialoog. Vanuit onze verschillen en gelijkwaardigheid. Vanuit een echte democratie. Ze zoekt antwoorden op volgende vragen:",
   "d_p2": "Ze begint klein, maar denkt groot. Door krachten te bundelen wil ze uitgroeien tot een beweging die mee richting geeft aan de wereld.",
   "f_titel": "De beweging begint",
   "f_intro": "Wil je meedoen, of eerst op de hoogte blijven? Schrijf je hier in.",
@@ -74,8 +74,8 @@
       "antwoord": "Het goede willen realiseren is niet naïef als het gedragen wordt door vele mensen. Het is wel noodzakelijk om de krachten te bundelen van alle mensen en organisaties die vandaag vanuit het goede denken en handelen, om de visie te bereiken.\n\nVelen willen systeemverandering, maar als een kleine organisatie kan je niet op tegen de kracht van het kapitalisme. Samenwerken op grote schaal is de belangrijkste kracht om vredevol op wereldschaal de ideologie van het kapitalisme te vervangen door de ideologie van het goede.\n\nDoor technologische ontwikkelingen is op grote schaal samenwerken toegankelijker dan ooit."
     },
     {
-      "vraag": "Wat gebeurt er op 26 november?",
-      "antwoord": "Dan wordt het boek voorgesteld in Lochristi, met de auteurs, een panel en een receptie. Deuren open om 17 uur, start om 17.30 uur. [Schrijf je hier in voor de lancering](/26november)."
+      "vraag": "Waar kan ik het boek kopen?",
+      "antwoord": "In de [webshop van Untold](https://shop.untold-publishing.com/products/het-goede), voor 24,99 euro. Verzending is gratis in België, Nederland en Frankrijk."
     },
     {
       "vraag": "Hoe werkt de beweging?",
@@ -88,5 +88,12 @@
   ],
   "volg_linkedin": "Volg het goede op LinkedIn",
   "volg_instagram": "Volg Untold op Instagram",
-  "colofon": "Het goede is een uitgave van Untold: Books That Matter\nuntold-books.com"
+  "colofon": "Het goede is een uitgave van Untold: Books That Matter\nuntold-books.com",
+  "d_vraag1": "Wat als een leefbare planeet en een waardige welvaart voor alle mensen het globale doel zou zijn?",
+  "d_vraag2": "Wat als de spelregels van ons wereldwijde bestuur niet van bovenaf, maar juist van onderuit vorm krijgen?",
+  "d_slot": "Laten we samen democratie en de spelregels van onze samenleving heruitvinden.",
+  "t_titel": "Terugblik op 26 november",
+  "t_p1": "Op 26 november stelden we het boek voor bij Floreac in Lochristi. Met 325 mensen in de zaal werd het een warme en inspirerende avond.",
+  "t_p2": "Wim Demessemaekers van Untold, Etienne, Geert Degrande en Wim Floré namen het woord. Daarna gingen Charlotte De Mey, Dimitri Barbe, Mieke De Vylder en Peter Depauw in gesprek, onder leiding van Ilse Gysel.",
+  "t_p3": "Dank aan iedereen die erbij was en mee de schouders zette onder deze avond."
 }
