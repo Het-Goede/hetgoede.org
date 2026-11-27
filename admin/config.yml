@@ -46,10 +46,14 @@ collections:
           - { label: "Boek · alinea 1", name: "b_p1", widget: "text" }
           - { label: "Boek · alinea 2", name: "b_p2", widget: "text" }
           - { label: "Boek · alinea 3", name: "b_p3", widget: "text" }
+          - { label: "Boek · bijschrift foto auteurs", name: "b_makers", widget: "string" }
           - { label: "Knoppen · knop 1 (bestellen)", name: "knop_bestel", widget: "string", hint: "Staat onder het boek en onder de vereniging" }
-          - { label: "Knoppen · knop 2", name: "knop_2", widget: "string" }
           - { label: "Knoppen · knop 3", name: "knop_3", widget: "string" }
           - { label: "Knoppen · noot onder de knoppen", name: "knop_noot", widget: "text" }
+          - { label: "Terugblik · titel", name: "t_titel", widget: "string" }
+          - { label: "Terugblik · alinea 1", name: "t_p1", widget: "text" }
+          - { label: "Terugblik · alinea 2", name: "t_p2", widget: "text" }
+          - { label: "Terugblik · alinea na de foto's", name: "t_p3", widget: "text" }
           - { label: "Visie · titel", name: "v_titel", widget: "string" }
           - { label: "Visie · inleiding", name: "v_intro", widget: "text" }
           - { label: "Visie · punt 1", name: "v_punt1", widget: "text" }
@@ -59,7 +63,10 @@ collections:
           - { label: "Visie · slotalinea", name: "v_slot", widget: "text" }
           - { label: "Doe je mee · titel", name: "d_titel", widget: "string" }
           - { label: "Doe je mee · alinea 1", name: "d_p1", widget: "text" }
+          - { label: "Doe je mee · vraag 1", name: "d_vraag1", widget: "text" }
+          - { label: "Doe je mee · vraag 2", name: "d_vraag2", widget: "text" }
           - { label: "Doe je mee · alinea 2", name: "d_p2", widget: "text" }
+          - { label: "Doe je mee · slotzin", name: "d_slot", widget: "string" }
           - { label: "Formulier · titel", name: "f_titel", widget: "string" }
           - { label: "Formulier · inleiding", name: "f_intro", widget: "text" }
           - { label: "Formulier · veld voornaam", name: "f_voornaam", widget: "string" }
@@ -116,10 +123,14 @@ collections:
           - { label: "Boek · alinea 1", name: "b_p1", widget: "text" }
           - { label: "Boek · alinea 2", name: "b_p2", widget: "text" }
           - { label: "Boek · alinea 3", name: "b_p3", widget: "text" }
+          - { label: "Boek · bijschrift foto auteurs", name: "b_makers", widget: "string" }
           - { label: "Knoppen · knop 1 (bestellen)", name: "knop_bestel", widget: "string", hint: "Staat onder het boek en onder de vereniging" }
-          - { label: "Knoppen · knop 2", name: "knop_2", widget: "string" }
           - { label: "Knoppen · knop 3", name: "knop_3", widget: "string" }
           - { label: "Knoppen · noot onder de knoppen", name: "knop_noot", widget: "text" }
+          - { label: "Terugblik · titel", name: "t_titel", widget: "string" }
+          - { label: "Terugblik · alinea 1", name: "t_p1", widget: "text" }
+          - { label: "Terugblik · alinea 2", name: "t_p2", widget: "text" }
+          - { label: "Terugblik · alinea na de foto's", name: "t_p3", widget: "text" }
           - { label: "Visie · titel", name: "v_titel", widget: "string" }
           - { label: "Visie · inleiding", name: "v_intro", widget: "text" }
           - { label: "Visie · punt 1", name: "v_punt1", widget: "text" }
@@ -129,7 +140,10 @@ collections:
           - { label: "Visie · slotalinea", name: "v_slot", widget: "text" }
           - { label: "Doe je mee · titel", name: "d_titel", widget: "string" }
           - { label: "Doe je mee · alinea 1", name: "d_p1", widget: "text" }
+          - { label: "Doe je mee · vraag 1", name: "d_vraag1", widget: "text" }
+          - { label: "Doe je mee · vraag 2", name: "d_vraag2", widget: "text" }
           - { label: "Doe je mee · alinea 2", name: "d_p2", widget: "text" }
+          - { label: "Doe je mee · slotzin", name: "d_slot", widget: "string" }
           - { label: "Formulier · titel", name: "f_titel", widget: "string" }
           - { label: "Formulier · inleiding", name: "f_intro", widget: "text" }
           - { label: "Formulier · veld voornaam", name: "f_voornaam", widget: "string" }
